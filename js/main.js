@@ -99,7 +99,7 @@
           vx: (Math.random() - 0.5) * NODE_SPEED,
           vy: (Math.random() - 0.5) * NODE_SPEED,
           radius: Math.random() * 3 + 2,
-          opacity: Math.random() * 0.5 + 0.3
+          opacity: Math.random() * 0.4 + 0.2
         });
       }
     }
@@ -112,12 +112,12 @@
     }
 
     function drawConnection(a, b, distance) {
-      const opacity = (1 - distance / CONNECTION_DISTANCE) * 0.22;
+      const opacity = (1 - distance / CONNECTION_DISTANCE) * 0.18;
       ctx.beginPath();
       ctx.moveTo(a.x, a.y);
       ctx.lineTo(b.x, b.y);
       ctx.strokeStyle = `rgba(3, 172, 240, ${opacity})`;
-      ctx.lineWidth = 1.0;
+      ctx.lineWidth = 1.8;
       ctx.stroke();
     }
 
@@ -136,8 +136,8 @@
       ctx.clearRect(0, 0, width, height);
 
       // Draw grid pattern (subtle)
-      ctx.strokeStyle = 'rgba(30, 69, 112, 0.12)';
-      ctx.lineWidth = 0.8;
+      ctx.strokeStyle = 'rgba(30, 69, 112, 0.1)';
+      ctx.lineWidth = 1.5;
       const gridSize = 60;
       for (let x = 0; x < width; x += gridSize) {
         ctx.beginPath();
