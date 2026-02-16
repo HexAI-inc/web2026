@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HexAI — Advanced AI engineering for enterprise. Machine learning, intelligent automation, and custom AI systems built for measurable business impact.">
+  <title>HexAI — Intelligent Systems Engineering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⬡</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <svg class="nav__logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 2L32 10V26L18 34L4 26V10L18 2Z" stroke="#03acf0" stroke-width="2" fill="none"/>
+          <path d="M18 8L28 14V24L18 30L8 24V14L18 8Z" stroke="#1e4570" stroke-width="1.5" fill="none"/>
+          <circle cx="18" cy="18" r="4" fill="#03acf0" opacity="0.8"/>
+          <line x1="18" y1="14" x2="18" y2="8" stroke="#03acf0" stroke-width="1" opacity="0.5"/>
+          <line x1="21.5" y1="16" x2="28" y2="14" stroke="#03acf0" stroke-width="1" opacity="0.5"/>
+          <line x1="21.5" y1="20" x2="28" y2="24" stroke="#03acf0" stroke-width="1" opacity="0.5"/>
+          <line x1="18" y1="22" x2="18" y2="30" stroke="#03acf0" stroke-width="1" opacity="0.5"/>
+          <line x1="14.5" y1="20" x2="8" y2="24" stroke="#03acf0" stroke-width="1" opacity="0.5"/>
+          <line x1="14.5" y1="16" x2="8" y2="14" stroke="#03acf0" stroke-width="1" opacity="0.5"/>
+        </svg>
+        Hex<span style="color: var(--color-accent)">AI</span>
+      </a>
+      <div class="nav__links" id="navLinks">
+        <a href="index.html" class="nav__link nav__link--active">Home</a>
+        <a href="services.html" class="nav__link">Services</a>
+        <a href="case-studies.html" class="nav__link">Case Studies</a>
+        <a href="team.html" class="nav__link">Team</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+        <a href="contact.html" class="btn btn--primary nav__cta">Book a Call</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <canvas id="heroCanvas"></canvas>
+      <div class="hero__gradient"></div>
+    </div>
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__label">
+          <span class="hero__label-dot"></span>
+          AI Engineering for Enterprise
+        </div>
+        <h1 class="hero__title">Intelligent Systems<br>Built to Scale</h1>
+        <p class="hero__subtitle">We engineer production-grade AI&nbsp;systems — from custom machine learning pipelines to full-stack intelligent automation — delivering measurable business outcomes.</p>
+        <div class="hero__actions">
+          <a href="contact.html" class="btn btn--primary btn--lg">
+            Book a Strategy Call
+            <svg class="btn__icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="3" y1="8" x2="13" y2="8"/><polyline points="9,4 13,8 9,12"/>
+            </svg>
+          </a>
+          <a href="case-studies.html" class="btn btn--secondary btn--lg">View Case Studies</a>
+        </div>
+        <div class="hero__stats">
+          <div>
+            <div class="hero__stat-value">50+</div>
+            <div class="hero__stat-label">AI Systems Deployed</div>
+          </div>
+          <div>
+            <div class="hero__stat-value">3.2x</div>
+            <div class="hero__stat-label">Avg. ROI Delivered</div>
+          </div>
+          <div>
+            <div class="hero__stat-value">99.7%</div>
+            <div class="hero__stat-label">System Uptime</div>
+          </div>
+          <div>
+            <div class="hero__stat-value">12</div>
+            <div class="hero__stat-label">Industries Served</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Proof Logo Strip -->
+  <section class="logo-strip reveal">
+    <div class="container">
+      <p class="logo-strip__label">Trusted by forward-thinking companies</p>
+      <div class="logo-strip__logos">
+        <svg class="logo-strip__item" viewBox="0 0 120 28" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="20" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#fff">TechFlow</text>
+        </svg>
+        <svg class="logo-strip__item" viewBox="0 0 120 28" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="20" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#fff">DataNova</text>
+        </svg>
+        <svg class="logo-strip__item" viewBox="0 0 120 28" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="20" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#fff">Meridian</text>
+        </svg>
+        <svg class="logo-strip__item" viewBox="0 0 120 28" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="20" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#fff">Apex Labs</text>
+        </svg>
+        <svg class="logo-strip__item" viewBox="0 0 120 28" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="20" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#fff">Quantum</text>
+        </svg>
+        <svg class="logo-strip__item" viewBox="0 0 120 28" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="20" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#fff">NexGen</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Preview -->
+  <section class="section section--alt" id="services-preview">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">What We Do</span>
+        <h2 class="section__title">AI Engineering<br>End to End</h2>
+        <p class="section__subtitle">From strategy to deployment — we build intelligent systems that transform how businesses operate.</p>
+      </div>
+      <div class="grid grid--4 reveal">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3 class="card__title">Machine Learning Engineering</h3>
+          <p class="card__text">Custom ML pipelines from data ingestion to model deployment. Production-grade systems built for reliability and scale.</p>
+          <a href="services.html" class="card__link">
+            Learn more
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9,4 13,8 9,12"/></svg>
+          </a>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+              <path d="M7 8h2m2 0h2m2 0h2"/>
+              <path d="M7 11h10"/>
+            </svg>
+          </div>
+          <h3 class="card__title">Intelligent Automation</h3>
+          <p class="card__text">Automate complex workflows with AI-driven decision engines. Reduce operational costs and eliminate manual bottlenecks.</p>
+          <a href="services.html" class="card__link">
+            Learn more
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9,4 13,8 9,12"/></svg>
+          </a>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+              <line x1="12" y1="22.08" x2="12" y2="12"/>
+            </svg>
+          </div>
+          <h3 class="card__title">Data Infrastructure</h3>
+          <p class="card__text">Design and build scalable data architectures. Real-time processing, feature stores, and analytics pipelines.</p>
+          <a href="services.html" class="card__link">
+            Learn more
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9,4 13,8 9,12"/></svg>
+          </a>
+        </div>
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M12 1v4m0 14v4m-8.66-15l3.46 2m10.4 6l3.46 2m-17.32 0l3.46-2m10.4-6l3.46-2"/>
+              <circle cx="12" cy="12" r="10"/>
+            </svg>
+          </div>
+          <h3 class="card__title">AI Strategy & Consulting</h3>
+          <p class="card__text">Strategic AI roadmaps aligned with business goals. Identify high-impact opportunities and build execution plans.</p>
+          <a href="services.html" class="card__link">
+            Learn more
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9,4 13,8 9,12"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies Preview -->
+  <section class="section" id="case-studies-preview">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Case Studies</span>
+        <h2 class="section__title">Results That<br>Speak for Themselves</h2>
+        <p class="section__subtitle">Real outcomes from real deployments. See how our AI systems drive measurable business impact.</p>
+      </div>
+      <div class="grid grid--3 reveal">
+
+        <!-- Case Study 1 -->
+        <a href="case-studies.html" class="case-card">
+          <div class="case-card__image">
+            <svg class="case-card__image-pattern" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+              <defs><pattern id="grid1" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#03acf0" stroke-width="0.5"/></pattern></defs>
+              <rect width="400" height="220" fill="url(#grid1)"/>
+            </svg>
+            <span class="case-card__tag">ML Pipeline</span>
+          </div>
+          <div class="case-card__body">
+            <p class="case-card__industry">Financial Services</p>
+            <h3 class="case-card__title">Predictive Risk Scoring for a Top-10 Bank</h3>
+            <p class="case-card__text">End-to-end ML pipeline processing 2M+ transactions daily with real-time fraud detection.</p>
+            <div class="case-card__results">
+              <div>
+                <div class="case-card__result-value">94%</div>
+                <p class="case-card__result-label">Detection accuracy</p>
+              </div>
+              <div>
+                <div class="case-card__result-value">60%</div>
+                <p class="case-card__result-label">Fewer false positives</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Case Study 2 -->
+        <a href="case-studies.html" class="case-card">
+          <div class="case-card__image">
+            <svg class="case-card__image-pattern" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+              <defs><pattern id="dots1" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#03acf0"/></pattern></defs>
+              <rect width="400" height="220" fill="url(#dots1)"/>
+            </svg>
+            <span class="case-card__tag">Automation</span>
+          </div>
+          <div class="case-card__body">
+            <p class="case-card__industry">Healthcare</p>
+            <h3 class="case-card__title">Automated Medical Document Processing</h3>
+            <p class="case-card__text">Intelligent extraction system handling 500K+ documents monthly with clinical-grade accuracy.</p>
+            <div class="case-card__results">
+              <div>
+                <div class="case-card__result-value">85%</div>
+                <p class="case-card__result-label">Time saved</p>
+              </div>
+              <div>
+                <div class="case-card__result-value">$2.4M</div>
+                <p class="case-card__result-label">Annual savings</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Case Study 3 -->
+        <a href="case-studies.html" class="case-card">
+          <div class="case-card__image">
+            <svg class="case-card__image-pattern" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+              <defs><pattern id="diag1" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 0 10 L 10 0" stroke="#03acf0" stroke-width="0.5"/></pattern></defs>
+              <rect width="400" height="220" fill="url(#diag1)"/>
+            </svg>
+            <span class="case-card__tag">Data Platform</span>
+          </div>
+          <div class="case-card__body">
+            <p class="case-card__industry">E-Commerce</p>
+            <h3 class="case-card__title">Real-Time Personalization Engine</h3>
+            <p class="case-card__text">Custom recommendation system serving 10M+ users with sub-100ms latency at scale.</p>
+            <div class="case-card__results">
+              <div>
+                <div class="case-card__result-value">34%</div>
+                <p class="case-card__result-label">Revenue uplift</p>
+              </div>
+              <div>
+                <div class="case-card__result-value">4.1x</div>
+                <p class="case-card__result-label">Engagement increase</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+      <div class="text-center mt-8 reveal">
+        <a href="case-studies.html" class="btn btn--secondary">
+          View All Case Studies
+          <svg class="btn__icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9,4 13,8 9,12"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Our Process</span>
+        <h2 class="section__title">From Problem<br>to Production</h2>
+        <p class="section__subtitle">A rigorous engineering process that moves from discovery to deployment with precision.</p>
+      </div>
+      <div class="process-steps reveal">
+        <div class="process-step">
+          <div class="process-step__number">01</div>
+          <h3 class="process-step__title">Discovery</h3>
+          <p class="process-step__text">Deep-dive into your business domain, data landscape, and objectives. Identify high-impact AI opportunities.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-step__number">02</div>
+          <h3 class="process-step__title">Architecture</h3>
+          <p class="process-step__text">Design scalable system architecture. Select optimal models, define data pipelines, and plan infrastructure.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-step__number">03</div>
+          <h3 class="process-step__title">Engineering</h3>
+          <p class="process-step__text">Build, train, and validate. Iterative development with continuous testing and stakeholder feedback.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-step__number">04</div>
+          <h3 class="process-step__title">Deployment</h3>
+          <p class="process-step__text">Production deployment with monitoring, CI/CD pipelines, and performance tracking. Ongoing optimization.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="cta-section section">
+    <div class="container reveal">
+      <h2 class="cta-section__title">Ready to Build<br>Intelligent Systems?</h2>
+      <p class="cta-section__text">Let's discuss how AI engineering can transform your operations and unlock new business value.</p>
+      <a href="contact.html" class="btn btn--primary btn--lg">
+        Book a Strategy Call
+        <svg class="btn__icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9,4 13,8 9,12"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="nav__logo">
+            <svg class="nav__logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 2L32 10V26L18 34L4 26V10L18 2Z" stroke="#03acf0" stroke-width="2" fill="none"/>
+              <circle cx="18" cy="18" r="4" fill="#03acf0" opacity="0.8"/>
+            </svg>
+            Hex<span style="color: var(--color-accent)">AI</span>
+          </a>
+          <p class="footer__brand-text">Advanced AI engineering for enterprises. We build intelligent systems that deliver measurable business impact.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Company</h4>
+          <div class="footer__links">
+            <a href="services.html" class="footer__link">Services</a>
+            <a href="case-studies.html" class="footer__link">Case Studies</a>
+            <a href="team.html" class="footer__link">Team</a>
+            <a href="contact.html" class="footer__link">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <div class="footer__links">
+            <a href="services.html" class="footer__link">ML Engineering</a>
+            <a href="services.html" class="footer__link">AI Automation</a>
+            <a href="services.html" class="footer__link">Data Infrastructure</a>
+            <a href="services.html" class="footer__link">AI Strategy</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Connect</h4>
+          <div class="footer__links">
+            <a href="mailto:hello@hexai.com" class="footer__link">hello@hexai.com</a>
+            <a href="#" class="footer__link">LinkedIn</a>
+            <a href="#" class="footer__link">GitHub</a>
+            <a href="#" class="footer__link">Twitter / X</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 HexAI. All rights reserved.</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="#" class="footer__social" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="#" class="footer__social" aria-label="Twitter">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
