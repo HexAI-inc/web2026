@@ -38,11 +38,9 @@
   window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
     if (currentScroll > 50) {
-      nav.style.borderBottomColor = 'rgba(255, 255, 255, 0.08)';
-      nav.style.background = 'rgba(10, 15, 26, 0.97)';
+      nav.classList.add('nav--scrolled');
     } else {
-      nav.style.borderBottomColor = 'rgba(255, 255, 255, 0.06)';
-      nav.style.background = 'rgba(10, 15, 26, 0.92)';
+      nav.classList.remove('nav--scrolled');
     }
     lastScroll = currentScroll;
   }, { passive: true });
@@ -81,7 +79,7 @@
     let animationId;
     let nodes = [];
     let width, height;
-    const NODE_COUNT = 85;
+    const NODE_COUNT = 100;
     const CONNECTION_DISTANCE = 220;
     const NODE_SPEED = 0.45;
 
@@ -98,8 +96,8 @@
           y: Math.random() * height,
           vx: (Math.random() - 0.5) * NODE_SPEED,
           vy: (Math.random() - 0.5) * NODE_SPEED,
-          radius: Math.random() * 3 + 2,
-          opacity: Math.random() * 0.4 + 0.2
+          radius: Math.random() * 4 + 3,
+          opacity: Math.random() * 0.4 + 0.4
         });
       }
     }
@@ -112,7 +110,7 @@
     }
 
     function drawConnection(a, b, distance) {
-      const opacity = (1 - distance / CONNECTION_DISTANCE) * 0.18;
+      const opacity = (1 - distance / CONNECTION_DISTANCE) * 0.4;
       ctx.beginPath();
       ctx.moveTo(a.x, a.y);
       ctx.lineTo(b.x, b.y);
@@ -136,7 +134,7 @@
       ctx.clearRect(0, 0, width, height);
 
       // Draw grid pattern (subtle)
-      ctx.strokeStyle = 'rgba(30, 69, 112, 0.1)';
+      ctx.strokeStyle = 'rgba(30, 69, 112, 0.2)';
       ctx.lineWidth = 1.5;
       const gridSize = 60;
       for (let x = 0; x < width; x += gridSize) {
