@@ -16,6 +16,7 @@
     navToggle.addEventListener('click', () => {
       navLinks.classList.toggle('nav__links--open');
       navToggle.classList.toggle('nav__toggle--active');
+      document.body.style.overflow = navLinks.classList.contains('nav__links--open') ? 'hidden' : '';
     });
 
     // Close menu on link click
@@ -23,6 +24,7 @@
       link.addEventListener('click', () => {
         navLinks.classList.remove('nav__links--open');
         navToggle.classList.remove('nav__toggle--active');
+        document.body.style.overflow = '';
       });
     });
   }
@@ -72,16 +74,16 @@
   // ============================================
   // Hero Canvas — Animated Network Grid
   // ============================================
-  const canvas = document.getElementById('heroCanvas');
+  const canvases = document.querySelectorAll('.hero-canvas');
 
-  if (canvas) {
+  canvases.forEach(canvas => {
     const ctx = canvas.getContext('2d');
     let animationId;
     let nodes = [];
     let width, height;
-    const NODE_COUNT = 60;
-    const CONNECTION_DISTANCE = 160;
-    const NODE_SPEED = 0.3;
+    const NODE_COUNT = 85;
+    const CONNECTION_DISTANCE = 220;
+    const NODE_SPEED = 0.45;
 
     function resize() {
       width = canvas.width = canvas.offsetWidth;
@@ -96,8 +98,8 @@
           y: Math.random() * height,
           vx: (Math.random() - 0.5) * NODE_SPEED,
           vy: (Math.random() - 0.5) * NODE_SPEED,
-          radius: Math.random() * 2 + 1,
-          opacity: Math.random() * 0.5 + 0.2
+          radius: Math.random() * 3 + 2,
+          opacity: Math.random() * 0.5 + 0.3
         });
       }
     }
@@ -110,12 +112,12 @@
     }
 
     function drawConnection(a, b, distance) {
-      const opacity = (1 - distance / CONNECTION_DISTANCE) * 0.15;
+      const opacity = (1 - distance / CONNECTION_DISTANCE) * 0.22;
       ctx.beginPath();
       ctx.moveTo(a.x, a.y);
       ctx.lineTo(b.x, b.y);
       ctx.strokeStyle = `rgba(3, 172, 240, ${opacity})`;
-      ctx.lineWidth = 0.5;
+      ctx.lineWidth = 1.0;
       ctx.stroke();
     }
 
@@ -134,9 +136,9 @@
       ctx.clearRect(0, 0, width, height);
 
       // Draw grid pattern (subtle)
-      ctx.strokeStyle = 'rgba(30, 69, 112, 0.08)';
-      ctx.lineWidth = 0.5;
-      const gridSize = 40;
+      ctx.strokeStyle = 'rgba(30, 69, 112, 0.12)';
+      ctx.lineWidth = 0.8;
+      const gridSize = 60;
       for (let x = 0; x < width; x += gridSize) {
         ctx.beginPath();
         ctx.moveTo(x, 0);
@@ -185,7 +187,7 @@
     });
 
     // Pause animation when not visible
-    const heroObserver = new IntersectionObserver((entries) => {
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           if (!animationId) animate();
@@ -196,8 +198,8 @@
       });
     }, { threshold: 0 });
 
-    heroObserver.observe(canvas.closest('.hero') || canvas);
-  }
+    observer.observe(canvas.closest('section') || canvas);
+  });
 
   // ============================================
   // Contact Form Handling
