@@ -1,297 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="HexAI Services — Machine learning engineering, intelligent automation, data infrastructure, and AI strategy consulting for enterprise.">
-  <title>Our Services — HexAI</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⬡</text></svg>">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Services — HexAI | Sovereign AI for Africa</title>
+<meta name="description" content="HexAI's four service pillars: Strategic AI Advisory, Data Infrastructure & Digitization, Intelligent Automation, and ML Engineering — all sovereign, all African."/>
+<meta name="keywords" content="AI services Africa, sovereign AI advisory, data digitization Africa, ML engineering Gambia, intelligent automation West Africa"/>
+<meta name="author" content="HexAI Ltd."/>
+<link rel="canonical" href="https://hexai.gm/services.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://hexai.gm/services.html"/>
+<meta property="og:title" content="Services — HexAI | Sovereign AI for Africa"/>
+<meta property="og:description" content="Strategic advisory, data infrastructure, intelligent automation, and ML engineering — HexAI's four sovereign AI service pillars for African institutions."/>
+<meta property="og:image" content="https://hexai.gm/images/og-hexai.png"/>
+<meta property="og:site_name" content="HexAI"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Services — HexAI | Sovereign AI for Africa"/>
+<meta name="twitter:description" content="Strategic advisory, data infrastructure, intelligent automation, and ML engineering for African institutions."/>
+<meta name="twitter:image" content="https://hexai.gm/images/og-hexai.png"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"HexAI Services","url":"https://hexai.gm/services.html","description":"HexAI's four sovereign AI service pillars for African governments and enterprises.","isPartOf":{"@type":"WebSite","name":"HexAI","url":"https://hexai.gm"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300&family=IBM+Plex+Mono:wght@300;400&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#04090f;--bg2:#070d16;--navy:#1e4570;--accent:#03acf0;--accent2:#00d4ff;
+  --text:#e8f4fd;--muted:rgba(232,244,253,0.45);--dim:rgba(232,244,253,0.18);
+  --border:rgba(3,172,240,0.15);--ff-h:'Fraunces',serif;--ff-b:'Outfit',sans-serif;--ff-m:'IBM Plex Mono',monospace;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:var(--ff-b);overflow-x:hidden;cursor:none;}
+#c-dot{position:fixed;width:6px;height:6px;background:var(--accent);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:transform .1s;}
+#c-ring{position:fixed;width:32px;height:32px;border:1px solid rgba(3,172,240,.5);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);}
+body:has(a:hover) #c-dot,body:has(button:hover) #c-dot{transform:translate(-50%,-50%) scale(3);background:white;}
+body:has(a:hover) #c-ring,body:has(button:hover) #c-ring{width:50px;height:50px;border-color:var(--accent);}
+#c-ring{transition:left .3s cubic-bezier(.23,1,.32,1),top .3s cubic-bezier(.23,1,.32,1),width .3s,height .3s,border-color .3s;}
+#cv{position:fixed;inset:0;z-index:0;pointer-events:none;}
+.grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+.logo-img{height:34px;width:auto;flex-shrink:0;}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:1.4rem 5rem;background:rgba(4,9,15,0);transition:background .4s,backdrop-filter .4s,border-color .4s;border-bottom:1px solid transparent;}
+nav.scrolled{background:rgba(4,9,15,.88);backdrop-filter:blur(20px);border-color:rgba(3,172,240,.08);}
+.nav-logo{display:flex;align-items:center;gap:.75rem;text-decoration:none;}
+.logo-name{font-family:var(--ff-h);font-weight:700;font-size:1.2rem;letter-spacing:.04em;}
+.logo-name span{color:var(--accent);}
+.nav-links{display:flex;gap:2.5rem;list-style:none;}
+.nav-links a{font-family:var(--ff-m);font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--text);text-decoration:none;opacity:.4;transition:opacity .2s;}
+.nav-links a:hover{opacity:1;}
+.nav-pill{display:flex;align-items:center;gap:1.8rem;}
+.live-badge{display:flex;align-items:center;gap:.5rem;font-family:var(--ff-m);font-size:.58rem;letter-spacing:.15em;color:var(--accent);opacity:.7;}
+.live-dot{width:5px;height:5px;background:var(--accent);border-radius:50%;box-shadow:0 0 8px var(--accent);animation:livepulse 1.8s ease infinite;}
+@keyframes livepulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(1.8)}}
+.nav-cta{font-family:var(--ff-m);font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);border:1px solid rgba(3,172,240,.4);padding:.5rem 1.4rem;border-radius:2px;text-decoration:none;transition:all .2s;}
+.nav-cta:hover{background:var(--accent);color:var(--bg);border-color:var(--accent);}
+.btn-glow{display:inline-flex;align-items:center;gap:.7rem;background:var(--accent);color:var(--bg);font-family:var(--ff-m);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;padding:.95rem 2.2rem;border-radius:2px;font-weight:400;transition:all .3s;border:1px solid var(--accent);position:relative;overflow:hidden;}
+.btn-glow:hover{box-shadow:0 0 40px rgba(3,172,240,.45),0 0 80px rgba(3,172,240,.15);transform:translateY(-2px);}
+.btn-line{font-family:var(--ff-m);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text);text-decoration:none;opacity:.35;padding:.95rem 2.2rem;border:1px solid rgba(232,244,253,.1);border-radius:2px;transition:all .25s;}
+.btn-line:hover{opacity:1;border-color:rgba(3,172,240,.3);color:var(--accent);}
+footer{position:relative;z-index:5;background:var(--bg2);border-top:1px solid rgba(3,172,240,.1);padding:5rem 5rem 3rem;}
+.ft{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:5rem;margin-bottom:4rem;}
+.fl-logo{display:flex;align-items:center;gap:.7rem;text-decoration:none;margin-bottom:1.2rem;}
+.fl-name{font-family:var(--ff-h);font-weight:700;font-size:1.15rem;}
+.fl-name span{color:var(--accent);}
+.fl-desc{font-size:.78rem;line-height:1.8;color:var(--muted);font-weight:300;max-width:28ch;margin-bottom:1.5rem;}
+.fl-badge{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--ff-m);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:rgba(3,172,240,.07);border:1px solid rgba(3,172,240,.15);padding:.3rem .8rem;border-radius:2px;}
+.fc h4{font-family:var(--ff-m);font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);opacity:.6;margin-bottom:1.3rem;}
+.fc a{display:block;font-size:.78rem;color:var(--muted);text-decoration:none;margin-bottom:.6rem;transition:color .2s;}
+.fc a:hover{color:var(--text);}
+.fb{display:flex;justify-content:space-between;align-items:center;padding-top:2.5rem;border-top:1px solid rgba(3,172,240,.07);}
+.fb span{font-family:var(--ff-m);font-size:.58rem;letter-spacing:.1em;color:var(--muted);opacity:.4;}
+.rv{opacity:0;transform:translateY(28px);}
+.rv.in{animation:rvIn .8s cubic-bezier(.16,1,.3,1) forwards;}
+.rv.in-d1{animation-delay:.1s;}
+.rv.in-d2{animation-delay:.2s;}
+.rv.in-d3{animation-delay:.3s;}
+@keyframes rvIn{to{opacity:1;transform:translateY(0);}}
+.stag{display:inline-flex;align-items:center;gap:.7rem;font-family:var(--ff-m);font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);margin-bottom:1.8rem;}
+.stag::before{content:'';width:20px;height:1px;background:var(--accent);}
+
+/* PAGE SPECIFIC */
+.page-hero{position:relative;z-index:5;min-height:55vh;display:flex;flex-direction:column;justify-content:flex-end;padding:8rem 5rem 6rem;border-bottom:1px solid rgba(3,172,240,.07);}
+.page-hero-pre{font-family:var(--ff-m);font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:.8rem;margin-bottom:1.8rem;}
+.page-hero-pre::before{content:'';width:24px;height:1px;background:var(--accent);}
+.page-hero h1{font-family:var(--ff-h);font-weight:900;font-size:clamp(3rem,6vw,7rem);line-height:.95;letter-spacing:-.03em;margin-bottom:1.5rem;}
+.page-hero h1 em{font-style:italic;font-weight:300;color:var(--accent);}
+.page-hero p{font-size:.92rem;line-height:1.9;color:var(--muted);max-width:52ch;font-weight:300;}
+.services-section{position:relative;z-index:5;padding:8rem 5rem;}
+.svc-item{border-top:1px solid rgba(3,172,240,.08);padding:4rem 0;display:grid;grid-template-columns:1fr 1.6fr;gap:6rem;align-items:start;}
+.svc-item-left{position:sticky;top:6rem;}
+.svc-item-num{font-family:var(--ff-m);font-size:.58rem;letter-spacing:.22em;color:var(--accent);opacity:.45;margin-bottom:1rem;}
+.svc-item-h2{font-family:var(--ff-h);font-weight:900;font-size:clamp(1.8rem,3vw,2.8rem);line-height:1.05;letter-spacing:-.02em;margin-bottom:.8rem;}
+.svc-item-sub{font-family:var(--ff-m);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);opacity:.6;}
+.svc-item-right p{font-size:.9rem;line-height:1.9;color:var(--muted);font-weight:300;margin-bottom:2rem;}
+.svc-features{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-bottom:2rem;}
+.svc-feat{display:flex;align-items:center;gap:.8rem;font-family:var(--ff-b);font-size:.78rem;color:var(--muted);}
+.svc-feat::before{content:'';width:4px;height:4px;background:var(--accent);border-radius:50%;flex-shrink:0;}
+.svc-tags{display:flex;flex-wrap:wrap;gap:.5rem;}
+.svc-tag{font-family:var(--ff-m);font-size:.56rem;letter-spacing:.12em;text-transform:uppercase;background:rgba(3,172,240,.07);border:1px solid rgba(3,172,240,.15);color:rgba(3,172,240,.7);padding:.28rem .7rem;border-radius:2px;}
+.tech-section{position:relative;z-index:5;padding:6rem 5rem;border-top:1px solid rgba(3,172,240,.07);background:rgba(3,172,240,.02);}
+.tech-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(3,172,240,.06);margin-top:4rem;}
+.tech-card{background:var(--bg2);padding:2rem 1.8rem;}
+.tech-card h4{font-family:var(--ff-m);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);opacity:.6;margin-bottom:1rem;}
+.tech-card p{font-size:.8rem;line-height:1.8;color:var(--muted);}
+.cta-sec{position:relative;z-index:5;padding:10rem 5rem;text-align:center;border-top:1px solid rgba(3,172,240,.07);}
+.cta-sec h2{font-family:var(--ff-h);font-weight:900;font-size:clamp(2.5rem,5vw,5.5rem);line-height:.95;letter-spacing:-.03em;margin-bottom:1.5rem;}
+.cta-sec h2 em{font-style:italic;font-weight:300;color:var(--accent);}
+.cta-sec p{font-size:.9rem;line-height:1.9;color:var(--muted);max-width:44ch;margin:0 auto 3rem;font-weight:300;}
+.cta-btns{display:flex;align-items:center;justify-content:center;gap:1.5rem;}
+@media(max-width:768px){
+  nav{padding:1rem 1.5rem;}.nav-links{display:none;}
+  .page-hero,.services-section,.cta-sec,.tech-section{padding-left:1.5rem;padding-right:1.5rem;}
+  .svc-item{grid-template-columns:1fr;gap:2rem;}.svc-item-left{position:static;}
+  .svc-features{grid-template-columns:1fr;}.tech-grid{grid-template-columns:1fr 1fr;}
+  .ft{grid-template-columns:1fr;gap:3rem;}footer{padding:3rem 1.5rem 2rem;}
+}
+</style>
 </head>
 <body>
+<div id="c-dot"></div><div id="c-ring"></div>
+<canvas id="cv"></canvas>
+<div class="grain"></div>
 
-  <!-- Navigation -->
-  <nav class="nav" id="nav">
-    <div class="nav__inner">
-      <a href="index.html" class="nav__logo">
-        <img src="images/logo-hexai.png" alt="HexAI Logo" class="nav__logo-img">
-        <span class="nav__logo-text">Hex<span style="color: var(--color-accent)">AI</span></span>
+<nav id="nav">
+  <a class="nav-logo" href="index.html">
+    <img src="images/logo-hexai.png" alt="HexAI" class="logo-img">
+    <span class="logo-name">Hex<span>AI</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="services.html">Services</a></li>
+    <li><a href="case-studies.html">Projects</a></li>
+    <li><a href="index.html#sovereignty">Sovereignty</a></li>
+    <li><a href="index.html#gambia">The Gambia</a></li>
+  </ul>
+  <div class="nav-pill">
+    <div class="live-badge"><div class="live-dot"></div>Building in Public</div>
+    <a class="nav-cta" href="contact.html">Partner With Us</a>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-pre">What We Build</div>
+  <h1>Four pillars.<br>One <em>sovereign</em> mission.</h1>
+  <p>Every service HexAI delivers is built around a single non-negotiable: the intelligence stays within your borders, under your governance, building your capacity.</p>
+</section>
+
+<section class="services-section">
+  <div class="svc-item rv">
+    <div class="svc-item-left">
+      <div class="svc-item-num">01 — ADVISORY</div>
+      <h2 class="svc-item-h2">Strategic Advisory<br>& Governance</h2>
+      <div class="svc-item-sub">B2G & Board Level</div>
+    </div>
+    <div class="svc-item-right">
+      <p>We work directly with ministries, national AI councils, and enterprise boards to build policy frameworks that protect sovereign interests. From national AI strategies to ethical deployment guidelines — we translate intelligence policy into enforceable architecture.</p>
+      <div class="svc-features">
+        <div class="svc-feat">AI Policy Frameworks</div>
+        <div class="svc-feat">National AI Roadmaps</div>
+        <div class="svc-feat">Ethical AI Guidelines</div>
+        <div class="svc-feat">Board Advisory</div>
+        <div class="svc-feat">ICT & Finance Ministry Consulting</div>
+        <div class="svc-feat">Regulatory Sandboxes</div>
+      </div>
+      <div class="svc-tags">
+        <span class="svc-tag">B2G Roadmaps</span><span class="svc-tag">National AI Policy</span><span class="svc-tag">Ethics Frameworks</span><span class="svc-tag">Investment Strategy</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="svc-item rv in-d1">
+    <div class="svc-item-left">
+      <div class="svc-item-num">02 — INFRASTRUCTURE</div>
+      <h2 class="svc-item-h2">Data Infrastructure<br>& Digitization</h2>
+      <div class="svc-item-sub">Bridging the Analog Gap</div>
+    </div>
+    <div class="svc-item-right">
+      <p>Decades of African institutional knowledge is locked in paper, legacy software, and disconnected silos. We extract it, structure it, and transform it into clean, AI-ready data environments — stored on sovereign infrastructure you own and control entirely.</p>
+      <div class="svc-features">
+        <div class="svc-feat">Mass-Scale OCR Digitization</div>
+        <div class="svc-feat">Data Cleaning & Annotation</div>
+        <div class="svc-feat">Sovereign Cloud Hosting</div>
+        <div class="svc-feat">Legacy System Integration</div>
+        <div class="svc-feat">Medical & Legal Record Conversion</div>
+        <div class="svc-feat">Volume-Based Data Pipelines</div>
+      </div>
+      <div class="svc-tags">
+        <span class="svc-tag">Legacy Migration</span><span class="svc-tag">Sovereign Cloud</span><span class="svc-tag">Data Engineering</span><span class="svc-tag">On-Premise AI Stack</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="svc-item rv in-d2">
+    <div class="svc-item-left">
+      <div class="svc-item-num">03 — AUTOMATION</div>
+      <h2 class="svc-item-h2">Intelligent<br>Automation</h2>
+      <div class="svc-item-sub">Custom AI for Measurable ROI</div>
+    </div>
+    <div class="svc-item-right">
+      <p>Custom AI systems engineered for measurable ROI. We deploy predictive models, decision-support engines, and autonomous workflow agents — each fine-tuned on your domain data, calibrated for your operational context, and producing outcomes you can audit.</p>
+      <div class="svc-features">
+        <div class="svc-feat">Process Automation</div>
+        <div class="svc-feat">Predictive Modelling</div>
+        <div class="svc-feat">Decision Intelligence</div>
+        <div class="svc-feat">Domain Fine-Tuning</div>
+        <div class="svc-feat">Multilingual LLM Tuning (Wolof/Mandinka)</div>
+        <div class="svc-feat">Agricultural Robotics (Agrotech)</div>
+      </div>
+      <div class="svc-tags">
+        <span class="svc-tag">Process Automation</span><span class="svc-tag">Predictive Modelling</span><span class="svc-tag">Decision Intelligence</span><span class="svc-tag">Domain Fine-Tuning</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="svc-item rv in-d3">
+    <div class="svc-item-left">
+      <div class="svc-item-num">04 — ENGINEERING</div>
+      <h2 class="svc-item-h2">Software Dev<br>& ML Engineering</h2>
+      <div class="svc-item-sub">Production-Grade Systems</div>
+    </div>
+    <div class="svc-item-right">
+      <p>We design and deploy scalable software architectures fused with advanced machine learning. From real-time inference APIs to large-scale data pipelines — our engineering teams build production systems that solve the operational challenges unique to African institutions.</p>
+      <div class="svc-features">
+        <div class="svc-feat">Full-Stack Build</div>
+        <div class="svc-feat">ML Pipelines</div>
+        <div class="svc-feat">Inference APIs</div>
+        <div class="svc-feat">Architecture Design</div>
+        <div class="svc-feat">Custom Computer Vision Systems</div>
+        <div class="svc-feat">Sovereign API Development</div>
+      </div>
+      <div class="svc-tags">
+        <span class="svc-tag">Full-Stack Build</span><span class="svc-tag">ML Pipelines</span><span class="svc-tag">Inference APIs</span><span class="svc-tag">Architecture Design</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tech-section">
+  <div class="stag rv">Technology Stack</div>
+  <h2 class="rv in-d1" style="font-family:var(--ff-h);font-weight:900;font-size:clamp(2.2rem,4vw,4rem);line-height:1;letter-spacing:-.025em;">Built with<br><em style="font-style:italic;font-weight:300;color:var(--accent);">best-in-class tools.</em></h2>
+  <div class="tech-grid rv in-d2">
+    <div class="tech-card"><h4>Languages</h4><p>Python · Go · TypeScript · SQL · Rust</p></div>
+    <div class="tech-card"><h4>ML Frameworks</h4><p>PyTorch · TensorFlow · scikit-learn · XGBoost · Hugging Face</p></div>
+    <div class="tech-card"><h4>Infrastructure</h4><p>Sovereign Cloud · Kubernetes · Docker · Terraform · On-Premise Stack</p></div>
+    <div class="tech-card"><h4>Data & MLOps</h4><p>Spark · Airflow · MLflow · dbt · Kafka · Redis</p></div>
+  </div>
+</section>
+
+<section class="cta-sec">
+  <div class="rv" style="font-family:var(--ff-m);font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;justify-content:center;gap:.8rem;margin-bottom:2.5rem;">
+    <span style="width:28px;height:1px;background:var(--accent);display:inline-block;opacity:.5;"></span>Ready to Build<span style="width:28px;height:1px;background:var(--accent);display:inline-block;opacity:.5;"></span>
+  </div>
+  <h2 class="rv in-d1">Let's engineer your<br><em>AI advantage.</em></h2>
+  <p class="rv in-d2">Tell us about your challenge. We'll map the best path from problem to production-grade sovereign AI.</p>
+  <div class="cta-btns rv in-d3">
+    <a href="contact.html" class="btn-glow">Book a Strategy Call <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 14 14"><line x1="2" y1="7" x2="12" y2="7"/><polyline points="8,3 12,7 8,11"/></svg></a>
+    <a href="case-studies.html" class="btn-line">See Our Projects</a>
+  </div>
+</section>
+
+<footer>
+  <div class="ft">
+    <div>
+      <a class="fl-logo" href="index.html">
+        <img src="images/logo-hexai.png" alt="HexAI" class="logo-img">
+        <span class="fl-name">Hex<span>AI</span></span>
       </a>
-      <div class="nav__links" id="navLinks">
-        <a href="index.html" class="nav__link">Home</a>
-        <a href="services.html" class="nav__link nav__link--active">Services</a>
-        <a href="case-studies.html" class="nav__link">Case Studies</a>
-        <a href="team.html" class="nav__link">Team</a>
-        <a href="contact.html" class="nav__link">Contact</a>
-        <a href="contact.html" class="btn btn--primary nav__cta">Book a Call</a>
-      </div>
-      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+      <p class="fl-desc">AI infrastructure and advisory firm dedicated to establishing AI sovereignty for The Gambia and the African continent.</p>
+      <div class="fl-badge">Banjul, The Gambia · Building in Public</div>
     </div>
-  </nav>
+    <div class="fc"><h4>Services</h4><a href="services.html">Strategic Advisory</a><a href="services.html">Data Infrastructure</a><a href="services.html">Intelligent Automation</a><a href="services.html">ML Engineering</a></div>
+    <div class="fc"><h4>Company</h4><a href="index.html">Home</a><a href="team.html">Team</a><a href="case-studies.html">Case Studies</a><a href="contact.html">Contact</a></div>
+    <div class="fc"><h4>Connect</h4><a href="mailto:admin@hexai.gm">admin@hexai.gm</a><a href="tel:+2207834351">+220 783 4351</a><a href="#">LinkedIn</a><a href="contact.html">Partnerships</a></div>
+  </div>
+  <div class="fb">
+    <span>© 2026 HexAI Ltd. · Banjul, The Gambia</span>
+    <span>AI Sovereignty · African Intelligence · Sovereign by Design</span>
+    <span>Privacy · Terms</span>
+  </div>
+</footer>
 
-  <!-- Page Hero -->
-  <section class="page-hero">
-    <div class="page-hero__bg">
-      <canvas class="hero-canvas"></canvas>
-      <div class="page-hero__gradient"></div>
-    </div>
-    <div class="container page-hero__content">
-      <span class="page-hero__label">A Sovereign Future</span>
-      <h1 class="page-hero__title">Empowering Nations<br>Through AI</h1>
-      <p class="page-hero__subtitle">Establishing AI sovereignty for Africa. We provide the strategic roadmap, technical infrastructure, and human capital to turn data into a national asset.</p>
-    </div>
-  </section>
+<script>
+// CURSOR
+const cdot=document.getElementById('c-dot'),cring=document.getElementById('c-ring');
+let mx=window.innerWidth/2,my=window.innerHeight/2,rx=mx,ry=my;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cdot.style.left=mx+'px';cdot.style.top=my+'px';});
+(function ar(){rx+=(mx-rx)*.11;ry+=(my-ry)*.11;cring.style.left=rx+'px';cring.style.top=ry+'px';requestAnimationFrame(ar);})();
 
-  <!-- Services Detail Section -->
-  <section class="section">
-    <div class="container">
+// NAV SCROLL
+window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60);});
 
-      <!-- Vertical A: Strategic Advisory & Governance -->
-      <div class="service-detail reveal">
-        <div class="service-detail__header">
-          <div class="service-detail__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="3"/>
-              <path d="M12 1v4m0 14v4m-8.66-15l3.46 2m10.4 6l3.46 2m-17.32 0l3.46-2m10.4-6l3.46-2"/>
-              <circle cx="12" cy="12" r="10"/>
-            </svg>
-          </div>
-          <div>
-            <h2 class="service-detail__title">Strategic Advisory & Governance</h2>
-            <p class="service-detail__subtitle">B2G & B2E High-Level Policy & Roadmaps</p>
-          </div>
-        </div>
-        <div class="service-detail__body">
-          <p class="service-detail__text">We help Governments and Large Enterprises navigate the complex landscape of artificial intelligence. Our consultancy focus is on drafting national policy frameworks, ethical guidelines, and actionable investment roadmaps that ensure AI adoption aligns with sovereign interests and long-term stability.</p>
-          <div class="service-detail__features">
-            <div class="service-detail__feature">
-              <svg class="service-detail__feature-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="4 9 7 12 14 5"/></svg>
-              AI Policy Frameworks
-            </div>
-            <div class="service-detail__feature">
-              <svg class="service-detail__feature-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="4 9 7 12 14 5"/></svg>
-              National AI Roadmaps
-            </div>
-            <div class="service-detail__feature">
-              <svg class="service-detail__feature-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="4 9 7 12 14 5"/></svg>
-              Ethical AI Guidelines
-            </div>
-            <div class="service-detail__feature">
-              <svg class="service-detail__feature-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="4 9 7 12 14 5"/></svg>
-              ICT & Finance Ministry Consulting
-            </div>
-            <div class="service-detail__feature">
-              <svg class="service-detail__feature-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="4 9 7 12 14 5"/></svg>
-              Regulatory Sandboxes
-            </div>
-            <div class="service-detail__feature">
-              <svg class="service-detail__feature-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="4 9 7 12 14 5"/></svg>
-              Investment Strategy
-            </div>
-          </div>
-        </div>
-      </div>
+// CANVAS
+const cv=document.getElementById('cv'),cx=cv.getContext('2d');
+let W,H;
+function rsz(){W=cv.width=window.innerWidth;H=cv.height=window.innerHeight;}
+rsz();window.addEventListener('resize',rsz);
+class Node{
+  constructor(){this.x=Math.random()*W;this.y=Math.random()*H;this.vx=(Math.random()-.5)*.25;this.vy=(Math.random()-.5)*.25;this.size=Math.random()*1.6+.4;this.phase=Math.random()*Math.PI*2;}
+  tick(){const dx=mx-this.x,dy=my-this.y,d=Math.hypot(dx,dy);if(d<250&&d>0){const f=(1-d/250)*.04;this.vx+=dx/d*f;this.vy+=dy/d*f;}this.vx*=.985;this.vy*=.985;this.x+=this.vx;this.y+=this.vy;if(this.x<0)this.x=W;if(this.x>W)this.x=0;if(this.y<0)this.y=H;if(this.y>H)this.y=0;this.phase+=.008;}
+  draw(){const a=.25+.2*Math.sin(this.phase);cx.beginPath();cx.arc(this.x,this.y,this.size,0,Math.PI*2);cx.fillStyle=`rgba(3,172,240,${a})`;cx.fill();}
+}
+const nodes=[];for(let i=0;i<90;i++)nodes.push(new Node());
+function drawHexGrid(){const s=55,w=s*2,h=Math.sqrt(3)*s,t=Date.now()/6000;for(let row=-1;row<H/h+2;row++){for(let col=-1;col<W/w+2;col++){const xo=(row%2)*s,hx=col*w+xo,hy=row*h,d=Math.hypot(hx-mx,hy-my),proximity=Math.max(0,1-d/400),a=.018+proximity*.04+.01*Math.sin(t+row*.3+col*.2);cx.beginPath();for(let i=0;i<6;i++){const ang=Math.PI/3*i+Math.PI/6;cx.lineTo(hx+s*.9*Math.cos(ang),hy+s*.9*Math.sin(ang));}cx.closePath();cx.strokeStyle=`rgba(3,172,240,${a})`;cx.lineWidth=.5;cx.stroke();}}}
+function frame(){cx.clearRect(0,0,W,H);const vg=cx.createRadialGradient(W/2,H/2,H*.2,W/2,H/2,H*.9);vg.addColorStop(0,'transparent');vg.addColorStop(1,'rgba(4,9,15,.45)');drawHexGrid();for(let i=0;i<nodes.length;i++){for(let j=i+1;j<nodes.length;j++){const dx=nodes[i].x-nodes[j].x,dy=nodes[i].y-nodes[j].y,d=Math.hypot(dx,dy);if(d<120){const prox=Math.max(0,1-Math.min(Math.hypot((nodes[i].x+nodes[j].x)/2-mx,(nodes[i].y+nodes[j].y)/2-my)/300,1));cx.beginPath();cx.moveTo(nodes[i].x,nodes[i].y);cx.lineTo(nodes[j].x,nodes[j].y);cx.strokeStyle=`rgba(3,172,240,${(1-d/120)*.14+prox*.12})`;cx.lineWidth=.4+prox*.4;cx.stroke();}}nodes[i].tick();nodes[i].draw();}const mg=cx.createRadialGradient(mx,my,0,mx,my,220);mg.addColorStop(0,'rgba(3,172,240,0.05)');mg.addColorStop(1,'transparent');cx.fillStyle=mg;cx.fillRect(0,0,W,H);cx.fillStyle=vg;cx.fillRect(0,0,W,H);requestAnimationFrame(frame);}
+frame();
 
-      <!-- Vertical B: Data Infrastructure & Digitization -->
-      <div class="service-detail reveal">
-        <div class="service-detail__header">
-          <div class="service-detail__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
-              <line x1="12" y1="22.08" x2="12" y2="12"/>
-            </svg>
-          </div>
-          <div>
-            <h2 class="service-detail__title">Data Infrastructure & Digitization</h2>
-            <p class="service-detail__subtitle">Bridging the Analog Gap (Zero-to-One)</p>
-          </div>
-        </div>
-        <div class="service-detail__body">
-          <p class="service-detail__text">The greatest barrier to AI is the lack of clean, digital data. HexAI manages the massive "Zero-to-One" effort of digitizing paper-based archives across sectors like healthcare, law, and land registry. We transform analog legacies into high-quality, machine-learning-ready datasets.</p>
-          <div class="service-detail__features">
-            <div class="service-detail__feature">
-              <svg class="service-detail__feature-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="4 9 7 12 14 5"/></svg>
-              Mass-Scale OCR Digitization
-            </div>
-            <div class="service-detail__feature">
-              <svg class="service-detail__feature-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="4 9 7 12 14 5"/></svg>
-              Data Cleaning & Annotation
-            </div>
-            <div class="service-detail__feature">
-              <svg class="service-detail__feature-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="4 9 7 12 14 5"/></svg>
-              Sovereign Cloud Hosting
-            </div>
-            <div class="service-detail__feature">
-              <svg class="service-detail__feature-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="4 9 7 12 14 5"/></svg>
-              Legacy System Integration
-            </div>
-            <div class="service-detail__feature">
-              <svg class="service-detail__feature-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="4 9 7 12 14 5"/></svg>
-              Medical & Legal Record Conversion
-            </div>
-            <div class="service-detail__feature">
-              <svg class="service-detail__feature-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="4 9 7 12 14 5"/></svg>
-              Volume-Based Data Pipelines
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Vertical C: Sovereign Model Development -->
-      <div class="service-detail reveal">
-        <div class="service-detail__header">
-          <div class="service-detail__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-              <path d="M2 17l10 5 10-5"/>
-              <path d="M2 12l10 5 10-5"/>
-            </svg>
-          </div>
-          <div>
-            <h2 class="service-detail__title">Sovereign Model Development</h2>
-            <p class="service-detail__subtitle">Fine-Tuning Intelligence for Local Context</p>
-          </div>
-        </div>
-        <div class="service-detail__body">
-          <p class="service-detail__text">Global models lack the cultural and linguistic nuances of the African continent. We build and fine-tune Large Language Models (LLMs), computer vision systems, and robotics integrations specifically designed for African environments—speaking local dialects and understanding local law.</p>
-          <div class="service-detail__features">
-            <div class="service-detail__feature">
-              <svg class="service-detail__feature-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="4 9 7 12 14 5"/></svg>
-              Multilingual LLM Tuning (Wolof/Mandinka)
-            </div>
-            <div class="service-detail__feature">
-              <svg class="service-detail__feature-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="4 9 7 12 14 5"/></svg>
-              Automated E-Government Bots
-            </div>
-            <div class="service-detail__feature">
-              <svg class="service-detail__feature-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="4 9 7 12 14 5"/></svg>
-              Agricultural Robotics (Agrotech)
-            </div>
-            <div class="service-detail__feature">
-              <svg class="service-detail__feature-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="4 9 7 12 14 5"/></svg>
-              Sovereign API Development
-            </div>
-            <div class="service-detail__feature">
-              <svg class="service-detail__feature-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="4 9 7 12 14 5"/></svg>
-              Custom Computer Vision Systems
-            </div>
-            <div class="service-detail__feature">
-              <svg class="service-detail__feature-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="4 9 7 12 14 5"/></svg>
-              Logistics & Telecom Optimization
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-    </div>
-  </section>
-
-  <!-- Tech Stack Section -->
-  <section class="section section--alt">
-    <div class="container">
-      <div class="section__header reveal">
-        <span class="section__label">Technology</span>
-        <h2 class="section__title">Built With<br>Best-in-Class Tools</h2>
-        <p class="section__subtitle">We leverage the most reliable, scalable technologies in the AI ecosystem.</p>
-      </div>
-      <div class="grid grid--4 reveal">
-        <div class="card" style="text-align: center;">
-          <h4 class="card__title" style="font-size: var(--font-size-base);">Languages</h4>
-          <p class="card__text">Python · Go · TypeScript · SQL · Rust</p>
-        </div>
-        <div class="card" style="text-align: center;">
-          <h4 class="card__title" style="font-size: var(--font-size-base);">ML Frameworks</h4>
-          <p class="card__text">PyTorch · TensorFlow · scikit-learn · XGBoost · Hugging Face</p>
-        </div>
-        <div class="card" style="text-align: center;">
-          <h4 class="card__title" style="font-size: var(--font-size-base);">Infrastructure</h4>
-          <p class="card__text">AWS · GCP · Azure · Kubernetes · Docker · Terraform</p>
-        </div>
-        <div class="card" style="text-align: center;">
-          <h4 class="card__title" style="font-size: var(--font-size-base);">Data & MLOps</h4>
-          <p class="card__text">Spark · Airflow · MLflow · dbt · Kafka · Redis</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-section section">
-    <div class="container reveal">
-      <h2 class="cta-section__title">Let's Engineer<br>Your AI Advantage</h2>
-      <p class="cta-section__text">Tell us about your challenge. We'll map the best path from problem to production-grade AI.</p>
-      <a href="contact.html" class="btn btn--primary btn--lg">
-        Book a Strategy Call
-        <svg class="btn__icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9,4 13,8 9,12"/></svg>
-      </a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div>
-          <a href="index.html" class="nav__logo">
-            <img src="images/logo-hexai.png" alt="HexAI Logo" class="nav__logo-img">
-            <span class="nav__logo-text">Hex<span style="color: var(--color-accent)">AI</span></span>
-          </a>
-          <p class="footer__brand-text">The "Palantir of Africa." Transforming nations through sovereign AI infrastructure and high-level consultancy.</p>
-        </div>
-        <div>
-          <h4 class="footer__heading">Company</h4>
-          <div class="footer__links">
-            <a href="services.html" class="footer__link">Strategic Advisory</a>
-            <a href="services.html" class="footer__link">Data Infrastructure</a>
-            <a href="services.html" class="footer__link">Sovereign Models</a>
-            <a href="contact.html" class="footer__link">Contact</a>
-          </div>
-        </div>
-        <div>
-          <h4 class="footer__heading">Service Lines</h4>
-          <div class="footer__links">
-            <a href="services.html" class="footer__link">National AI Roadmaps</a>
-            <a href="services.html" class="footer__link">Digitization Projects</a>
-            <a href="services.html" class="footer__link">Custom LLM Training</a>
-            <a href="services.html" class="footer__link">Robotics Integration</a>
-          </div>
-        </div>
-        <div>
-          <h4 class="footer__heading">Connect</h4>
-          <div class="footer__links">
-            <a href="mailto:hello@hexai.com" class="footer__link">hello@hexai.com</a>
-            <a href="#" class="footer__link">LinkedIn</a>
-            <a href="#" class="footer__link">GitHub</a>
-            <a href="#" class="footer__link">Twitter / X</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <p class="footer__copyright">&copy; 2026 HexAI. All rights reserved.</p>
-        <div class="footer__socials">
-          <a href="#" class="footer__social" aria-label="LinkedIn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </a>
-          <a href="#" class="footer__social" aria-label="GitHub">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-          </a>
-          <a href="#" class="footer__social" aria-label="Twitter">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
+// SCROLL REVEAL
+const sio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');sio.unobserve(e.target);}}),{threshold:.1});
+document.querySelectorAll('.rv').forEach(el=>sio.observe(el));
+</script>
 </body>
 </html>
