@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HexAI Payment Gateway | Payment API in The Gambia</title>
+<meta name="description" content="One payment API for The Gambia: collect and pay out over Wave, APS and cards, reconciled on a live ledger. Per-transaction pricing and full developer docs.">
+<link rel="canonical" href="https://hexai.gm/payment-gateway">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HexAI">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://hexai.gm/payment-gateway">
+<meta property="og:title" content="HexAI Payment Gateway | Payment API in The Gambia">
+<meta property="og:description" content="One payment API for The Gambia: collect and pay out over Wave, APS and cards, reconciled on a live ledger. Per-transaction pricing and full developer docs.">
+<meta property="og:image" content="https://hexai.gm/images/og-hexai.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HexAI Payment Gateway | Payment API in The Gambia">
+<meta name="twitter:description" content="One payment API for The Gambia: collect and pay out over Wave, APS and cards, reconciled on a live ledger. Per-transaction pricing and full developer docs.">
+<meta name="twitter:image" content="https://hexai.gm/images/og-hexai.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://hexai.gm/#org", "name": "HexAI", "url": "https://hexai.gm/", "logo": "https://hexai.gm/images/logo-hexai.png", "description": "HexAI builds AI products and software infrastructure for African governments, enterprises and students, from payment rails to offline AI tutors.", "email": "admin@hexai.gm", "telephone": "+220 87 783 4351", "sameAs": ["https://www.linkedin.com/company/hexai-gm"], "address": {"@type": "PostalAddress", "addressLocality": "Banjul", "addressCountry": "GM"}, "areaServed": {"@type": "Country", "name": "The Gambia"}, "knowsAbout": ["Artificial intelligence", "Machine learning", "Software development", "Payment infrastructure", "Business automation"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Which payment methods does HPG support in The Gambia?", "acceptedAnswer": {"@type": "Answer", "text": "Wave and APS mobile money, plus card payments, all through the same API and reconciled on one ledger in dalasi (GMD)."}}, {"@type": "Question", "name": "How long does it take to integrate?", "acceptedAnswer": {"@type": "Answer", "text": "The integration is three requests. The quickstart gets a first test payment through in about 10 minutes, and most teams go from sign-up to a live payment in an afternoon."}}, {"@type": "Question", "name": "How much does HPG cost?", "acceptedAnswer": {"@type": "Answer", "text": "One commission per successful transaction, set by rail and monthly volume. There is no setup fee, no monthly fee, and nothing is charged on failed payments. Contact us to agree your rate."}}, {"@type": "Question", "name": "Can HexAI integrate HPG into our existing system for us?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Our software team can integrate HPG into your website, app or business system, or build the system around it."}}]}</script>
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script>(function(){var t=null;try{t=localStorage.getItem('hexai-theme')}catch(e){}document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark')})()</script>
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+
+<canvas id="mesh" aria-hidden="true"></canvas>
+<div class="glow" aria-hidden="true"></div>
+
+<div class="nav-shell">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="nav-logo" href="/" aria-label="HexAI home">
+      <img src="/images/logo-hexai.png" alt="HexAI" width="34" height="34">
+      <span class="status" role="status" aria-label="All systems operational"></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="/services">Services</a></li>
+      <li><a href="/projects">Projects</a></li>
+      <li><a href="/team">Team</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="chip hide-sm" href="https://app.hx-ai.org" target="_blank" rel="noopener">Console</a>
+      <a class="chip" href="/contact"><span class="dot"></span>Partner<span class="dot"></span></a>
+      <button class="chip icon" id="themeBtn" aria-label="Toggle colour theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="chip icon menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobilePanel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-panel" id="mobilePanel">
+    <a href="/">Home</a>
+    <a href="/services">Services</a>
+    <a href="/projects">Projects</a>
+    <a href="/team">Team</a>
+    <a href="/contact">Contact</a>
+  </div>
+</div>
+
+<main>
+<section class="hero page">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">HexAI Payment Gateway · Live in The Gambia</span>
+      <h1>One payment API<br>for <em>The Gambia.</em></h1>
+      <p class="lead">Collect and pay out over Wave, APS and cards through a single API, with every dalasi reconciled on one live ledger. Built and run by HexAI in Banjul.</p>
+      <div class="hero-cta">
+        <a class="btn primary" href="https://hpg.hexai.gm" target="_blank" rel="noopener">Get started on hpg.hexai.gm ↗</a>
+        <a class="btn" href="/contact">Talk about volume <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+    <div class="vline" aria-hidden="true"></div>
+    <aside class="hud reveal" aria-label="Gateway summary">
+      <span class="c tl"></span><span class="c tr"></span><span class="c bl"></span><span class="c br"></span>
+      <div class="hud-title">HPG · Ledger · GMD</div>
+      <dl>
+        <dt>Rails</dt><dd class="accent">Wave · APS · Card</dd>
+        <dt>Integration</dt><dd>3 requests · REST + JSON</dd>
+        <dt>Webhooks</dt><dd>Signed HMAC-SHA256</dd>
+        <dt>Failed payments</dt><dd>D 0 charged</dd>
+      </dl>
+      <a class="hud-glyph" href="https://hpg.hexai.gm" target="_blank" rel="noopener">
+        <span class="g" aria-hidden="true">⬡</span>
+        <span>▸ Read the docs</span>
+      </a>
+    </aside>
+  </div>
+</section>
+
+<section class="section" id="what">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">The platform</span>
+      <h2 class="h2">Move every dalasi from one place</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="grid c3 reveal">
+      <article class="card">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></svg>
+        <h3>Collections</h3>
+        <span class="sub">Get paid how customers already pay</span>
+        <p>Accept Wave, APS and card payments with a single request. Hosted, localised checkout, reconciled for you from the first transaction.</p>
+      </article>
+      <article class="card">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V9M7 14l5-5 5 5M4 3h16"/></svg>
+        <h3>Payouts</h3>
+        <span class="sub">Settle on your schedule</span>
+        <p>Send money out to mobile money wallets, with payouts settling on the schedule configured for your business.</p>
+      </article>
+      <article class="card">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+        <h3>Live ledger</h3>
+        <span class="sub">One source of truth</span>
+        <p>Every collection and payout on one ledger in dalasi, with settlement statements, dashboard, analytics and team access included.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="developers">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Built for developers</span>
+      <h2 class="h2">Three requests. That's the integration.</h2>
+      <div class="rule"></div>
+    </div>
+    <article class="block reveal">
+      <div class="block-main">
+        <div class="block-head"><span class="num">REST · JSON · OpenAPI</span></div>
+        <h2>From sign-up to first payment in an afternoon</h2>
+        <p>Plain REST and JSON, no SDK required. Amounts are decimal strings, requests are idempotent by reference, and the API is documented in an OpenAPI spec that is checked in CI, so the docs can't drift from the API.</p>
+        <ul class="ticks">
+          <li>Get your keys: sign up, complete KYC, and take live and test keys from the dashboard</li>
+          <li>Register a webhook: one HTTPS endpoint, every event signed with HMAC-SHA256</li>
+          <li>Initiate a collection: one POST returns a checkout URL for the app your customer already uses</li>
+          <li>Money confirmed: the webhook fires on completion and the ledger updates</li>
+        </ul>
+        <div class="block-actions"><a class="btn primary" href="https://hpg.hexai.gm" target="_blank" rel="noopener">API reference ↗</a></div>
+      </div>
+      <div class="block-side list">
+        <span class="eyebrow">Included</span>
+        <ul class="ticks">
+          <li>Sandbox environment and test keys</li>
+          <li>Quickstart: first payment in about 10 minutes</li>
+          <li>API console and Postman collection</li>
+          <li>Automatic webhook redelivery</li>
+          <li>KYC onboarding and compliance handled</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="pricing">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Pricing</span>
+      <h2 class="h2">Pay only when money moves</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="grid c3 reveal">
+      <article class="card"><div class="big">%</div><h3>One commission</h3><p>A single rate per successful transaction, negotiated once for your rail mix and monthly volume.</p></article>
+      <article class="card"><div class="big">D 0</div><h3>No fixed fees</h3><p>No setup fee and no monthly fee. Nothing is charged on failed payments.</p></article>
+      <article class="card"><div class="big">1</div><h3>Transparent statements</h3><p>The commission is shown on every settlement statement. No subscriptions and no hidden spreads.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="faq">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Common questions</span>
+      <h2 class="h2">Payment gateway FAQ</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="faq reveal">
+      <details open>
+        <summary>Which payment methods does HPG support in The Gambia?</summary>
+        <p>Wave and APS mobile money, plus card payments, all through the same API and reconciled on one ledger in dalasi (GMD).</p>
+      </details>
+      <details>
+        <summary>How long does it take to integrate?</summary>
+        <p>The integration is three requests. The quickstart gets a first test payment through in about 10 minutes, and most teams go from sign-up to a live payment in an afternoon.</p>
+      </details>
+      <details>
+        <summary>How much does HPG cost?</summary>
+        <p>One commission per successful transaction, set by rail and monthly volume. There is no setup fee, no monthly fee, and nothing is charged on failed payments. Contact us to agree your rate.</p>
+      </details>
+      <details>
+        <summary>Can HexAI integrate HPG into our existing system for us?</summary>
+        <p>Yes. Our software team can integrate HPG into your website, app or business system, or build the system around it.</p>
+      </details>
+    </div>
+
+    <div class="closing reveal">
+      <div>
+        <span class="eyebrow">Open your ledger</span>
+        <h2>Start moving money today</h2>
+        <p class="note">Sandbox keys are free and take minutes. Talk to us when you're ready to agree volume pricing.</p>
+      </div>
+      <div class="hero-cta" style="margin-top:0">
+        <a class="btn primary" href="https://hpg.hexai.gm" target="_blank" rel="noopener">Get started ↗</a>
+        <a class="btn" href="/contact">Talk to our team</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <img src="/images/logo-hexai.png" alt="HexAI" width="40" height="40">
+        <p class="lead" style="margin-top:1.25rem;font-size:1rem">We build quality AI and software.</p>
+        <p class="loc">· Banjul · The Gambia</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/team">Team</a></li>
+          <li><a href="/projects">Case studies</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="hl">Products</h4>
+        <ul>
+          <li><a href="https://karang.hx-ai.org" target="_blank" rel="noopener">Karang ↗</a></li>
+          <li><a href="/payment-gateway">HPG</a></li>
+          <li><a href="https://kernel.hexai.gm" target="_blank" rel="noopener">Kernel ↗</a></li>
+          <li><a href="https://socratic.hx-ai.org" target="_blank" rel="noopener">Bantaba AI ↗</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/ai-development-gambia">AI Products</a></li>
+          <li><a href="/software-development-gambia">Software Infrastructure</a></li>
+          <li><a href="/services#advisory">Strategy &amp; Requirements</a></li>
+          <li><a href="/services#engineering">Engineering</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:admin@hexai.gm">admin@hexai.gm</a></li>
+          <li><a href="tel:+220877834351">+220 87 783 4351</a></li>
+          <li><a href="tel:+220833020789">+220 83 302 0789</a></li>
+          <li><a href="https://www.linkedin.com/company/hexai-gm" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy" style="justify-content:space-between;flex-wrap:wrap;gap:.75rem"><span>AI &amp; Software · Built in Banjul</span><span>© 2026 HexAI · All rights reserved.</span></div>
+  </div>
+</footer>
+
+<script src="/assets/site.js"></script>
+</body>
+</html>

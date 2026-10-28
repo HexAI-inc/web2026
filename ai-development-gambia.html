@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Development in The Gambia | HexAI</title>
+<meta name="description" content="HexAI builds AI for Gambian institutions and businesses: fine-tuned and on-device models, AI automation and custom machine learning. Built in Banjul.">
+<link rel="canonical" href="https://hexai.gm/ai-development-gambia">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HexAI">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://hexai.gm/ai-development-gambia">
+<meta property="og:title" content="AI Development in The Gambia | HexAI">
+<meta property="og:description" content="HexAI builds AI for Gambian institutions and businesses: fine-tuned and on-device models, AI automation and custom machine learning. Built in Banjul.">
+<meta property="og:image" content="https://hexai.gm/images/og-hexai.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Development in The Gambia | HexAI">
+<meta name="twitter:description" content="HexAI builds AI for Gambian institutions and businesses: fine-tuned and on-device models, AI automation and custom machine learning. Built in Banjul.">
+<meta name="twitter:image" content="https://hexai.gm/images/og-hexai.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://hexai.gm/#org", "name": "HexAI", "url": "https://hexai.gm/", "logo": "https://hexai.gm/images/logo-hexai.png", "description": "HexAI builds AI products and software infrastructure for African governments, enterprises and students, from payment rails to offline AI tutors.", "email": "admin@hexai.gm", "telephone": "+220 87 783 4351", "sameAs": ["https://www.linkedin.com/company/hexai-gm"], "address": {"@type": "PostalAddress", "addressLocality": "Banjul", "addressCountry": "GM"}, "areaServed": {"@type": "Country", "name": "The Gambia"}, "knowsAbout": ["Artificial intelligence", "Machine learning", "Software development", "Payment infrastructure", "Business automation"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does HexAI build AI in The Gambia, or outsource it?", "acceptedAnswer": {"@type": "Answer", "text": "We build it ourselves. HexAI's engineering team is based in Banjul and has fine-tuned, deployed and maintains the AI products shown on this page."}}, {"@type": "Question", "name": "Can AI work for users with poor or no internet?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Bantaba AI runs a fine-tuned model entirely on a budget Android phone, and Base10 works offline and syncs when students reconnect. We design for the connectivity your users actually have."}}, {"@type": "Question", "name": "Do we need a lot of data to start?", "acceptedAnswer": {"@type": "Answer", "text": "Not always. Many projects start from an existing open model fine-tuned on a modest amount of your data. During scoping we tell you honestly what data is needed and whether it is available."}}, {"@type": "Question", "name": "How much does an AI project cost?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on scope, so we quote per project after a free 30-minute strategy call. We'll recommend the simplest approach that solves the problem, which is often cheaper than you expect."}}]}</script>
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script>(function(){var t=null;try{t=localStorage.getItem('hexai-theme')}catch(e){}document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark')})()</script>
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+
+<canvas id="mesh" aria-hidden="true"></canvas>
+<div class="glow" aria-hidden="true"></div>
+
+<div class="nav-shell">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="nav-logo" href="/" aria-label="HexAI home">
+      <img src="/images/logo-hexai.png" alt="HexAI" width="34" height="34">
+      <span class="status" role="status" aria-label="All systems operational"></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="/services">Services</a></li>
+      <li><a href="/projects">Projects</a></li>
+      <li><a href="/team">Team</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="chip hide-sm" href="https://app.hx-ai.org" target="_blank" rel="noopener">Console</a>
+      <a class="chip" href="/contact"><span class="dot"></span>Partner<span class="dot"></span></a>
+      <button class="chip icon" id="themeBtn" aria-label="Toggle colour theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="chip icon menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobilePanel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-panel" id="mobilePanel">
+    <a href="/">Home</a>
+    <a href="/services">Services</a>
+    <a href="/projects">Projects</a>
+    <a href="/team">Team</a>
+    <a href="/contact">Contact</a>
+  </div>
+</div>
+
+<main>
+<section class="hero page">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">AI development · Banjul, The Gambia</span>
+      <h1>AI development<br>in <em>The Gambia.</em></h1>
+      <p class="lead">HexAI designs, trains and ships AI for Gambian institutions and businesses: fine-tuned models, on-device inference, AI automation and custom machine learning, built in Banjul and running in production.</p>
+      <div class="hero-cta">
+        <a class="btn primary" href="/contact">Talk to our team <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn" href="#examples">See our AI products</a>
+      </div>
+    </div>
+    <div class="vline" aria-hidden="true"></div>
+    <aside class="hud reveal" aria-label="AI capability summary">
+      <span class="c tl"></span><span class="c tr"></span><span class="c bl"></span><span class="c br"></span>
+      <div class="hud-title">HexAI · AI Engineering</div>
+      <dl>
+        <dt>Model work</dt><dd>Fine-tuning at the weight level</dd>
+        <dt>Deployment</dt><dd>On-device · cloud · hybrid</dd>
+        <dt>Smallest model shipped</dt><dd class="accent">0.6B, fully offline</dd>
+        <dt>AI products live</dt><dd>3</dd>
+      </dl>
+      <a class="hud-glyph" href="/contact">
+        <span class="g" aria-hidden="true">⬡</span>
+        <span>▸ Free 30-min strategy call</span>
+      </a>
+    </aside>
+  </div>
+</section>
+
+<section class="section" id="what">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">What we build</span>
+      <h2 class="h2">AI that does a real job</h2>
+      <div class="rule"></div>
+    </div>
+    <p class="lead reveal" style="margin-top:2rem;max-width:68ch">We don't wrap someone else's chatbot and call it a product. We start from the problem, pick the smallest model that solves it, and engineer it to run where your users are, including on budget phones with no signal.</p>
+    <div class="grid c3 reveal">
+      <article class="card" id="models">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        <h3>Fine-tuned &amp; on-device models</h3>
+        <span class="sub">Custom language models</span>
+        <p>Models fine-tuned on your domain and compressed to run on the hardware you have: a phone, a laptop or your own server. No per-query fees to a foreign API, and it keeps working offline.</p>
+      </article>
+      <article class="card" id="automation">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v4l3 2"/><circle cx="12" cy="12" r="9"/></svg>
+        <h3>AI automation for businesses</h3>
+        <span class="sub">Workflows &amp; document processing</span>
+        <p>Automating the repetitive work that eats staff time: reading receipts and documents with OCR, routing requests, drafting replies, and flagging the cases a person needs to see.</p>
+      </article>
+      <article class="card" id="ml">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6"/></svg>
+        <h3>Custom machine learning</h3>
+        <span class="sub">Prediction &amp; decision support</span>
+        <p>Machine learning models built on your own data for forecasting, classification and recommendations, with evaluation you can audit before anything goes live.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="examples">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Proof · AI we've shipped</span>
+      <h2 class="h2">Built and running today</h2>
+      <div class="rule"></div>
+    </div>
+
+    <article class="block reveal">
+      <div class="block-main">
+        <div class="block-head"><span class="num">Bantaba AI · On-device model</span><span class="badge live">Live</span></div>
+        <h2>An AI tutor that runs with no internet <small>Fine-tuned to teach through questions.</small></h2>
+        <p>We fine-tuned a 0.6B-parameter model at the weight level to teach data science and machine learning the Socratic way: it guides with questions instead of handing over answers. It is quantised and compiled to run fully offline on budget Android phones, with automatic switching to an online mode when a connection is available.</p>
+        <div class="tags"><span class="tag">Fine-tuning</span><span class="tag">llama.cpp</span><span class="tag">Flutter</span><span class="tag">Offline-first</span></div>
+        <div class="block-actions"><a class="btn primary" href="https://socratic.hx-ai.org" target="_blank" rel="noopener">socratic.hx-ai.org ↗</a><a class="btn" href="/projects#bantaba">Case study</a></div>
+      </div>
+      <div class="block-side">
+        <div class="stat"><div class="big">0.6B</div><span class="eyebrow">Parameters, fine-tuned</span></div>
+        <div class="stat"><div class="big">58MB</div><span class="eyebrow">App size</span></div>
+        <div class="stat"><div class="big">5–7s</div><span class="eyebrow">Offline reply on a 4GB phone</span></div>
+      </div>
+    </article>
+
+    <div class="grid c2 reveal">
+      <article class="card">
+        <span class="num">Karang</span>
+        <h3>Adaptive AI maths tutor</h3>
+        <span class="sub">Personalised learning</span>
+        <p>Modes for kids, teens and exam-takers, with lessons and examples localised to five African countries and pace that adapts to each learner.</p>
+        <a class="link tag" href="https://karang.hx-ai.org" target="_blank" rel="noopener">karang.hx-ai.org ↗</a>
+      </article>
+      <article class="card">
+        <span class="num">Base10</span>
+        <h3>Offline exam prep with AI explanations</h3>
+        <span class="sub">WAEC · GABECE · JAMB</span>
+        <p>20,000+ past questions that work offline, with Socratic AI explanations that show students how to solve a problem, not just the answer.</p>
+        <a class="link tag" href="https://base10.gm" target="_blank" rel="noopener">base10.gm ↗</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="process">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">How an AI project runs</span>
+      <h2 class="h2">From idea to something people use</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="grid c4 reveal">
+      <article class="card"><span class="num">01</span><h3>Scope</h3><p>We define the problem, the users and what success looks like, and check whether AI is the right tool at all.</p></article>
+      <article class="card"><span class="num">02</span><h3>Data</h3><p>We gather, clean and structure the data the model needs, including digitising paper records where necessary.</p></article>
+      <article class="card"><span class="num">03</span><h3>Build &amp; evaluate</h3><p>We train or fine-tune, then test against agreed benchmarks before anything reaches a real user.</p></article>
+      <article class="card"><span class="num">04</span><h3>Ship &amp; maintain</h3><p>We deploy where your users are, monitor it in production and keep improving it after launch.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="faq">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Common questions</span>
+      <h2 class="h2">AI development FAQ</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="faq reveal">
+      <details open>
+        <summary>Does HexAI build AI in The Gambia, or outsource it?</summary>
+        <p>We build it ourselves. HexAI's engineering team is based in Banjul and has fine-tuned, deployed and maintains the AI products shown on this page.</p>
+      </details>
+      <details>
+        <summary>Can AI work for users with poor or no internet?</summary>
+        <p>Yes. Bantaba AI runs a fine-tuned model entirely on a budget Android phone, and Base10 works offline and syncs when students reconnect. We design for the connectivity your users actually have.</p>
+      </details>
+      <details>
+        <summary>Do we need a lot of data to start?</summary>
+        <p>Not always. Many projects start from an existing open model fine-tuned on a modest amount of your data. During scoping we tell you honestly what data is needed and whether it is available.</p>
+      </details>
+      <details>
+        <summary>How much does an AI project cost?</summary>
+        <p>It depends on scope, so we quote per project after a free 30-minute strategy call. We'll recommend the simplest approach that solves the problem, which is often cheaper than you expect.</p>
+      </details>
+    </div>
+
+    <div class="closing reveal">
+      <div>
+        <span class="eyebrow">Start a project</span>
+        <h2>Have a problem AI could solve?</h2>
+        <p class="note">Tell us about it. We'll tell you honestly whether AI is the right tool, and what it would take.</p>
+      </div>
+      <div class="hero-cta" style="margin-top:0">
+        <a class="btn primary" href="/contact">Talk to our team <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn" href="/software-development-gambia">Software development</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <img src="/images/logo-hexai.png" alt="HexAI" width="40" height="40">
+        <p class="lead" style="margin-top:1.25rem;font-size:1rem">We build quality AI and software.</p>
+        <p class="loc">· Banjul · The Gambia</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/team">Team</a></li>
+          <li><a href="/projects">Case studies</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="hl">Products</h4>
+        <ul>
+          <li><a href="https://karang.hx-ai.org" target="_blank" rel="noopener">Karang ↗</a></li>
+          <li><a href="/payment-gateway">HPG</a></li>
+          <li><a href="https://kernel.hexai.gm" target="_blank" rel="noopener">Kernel ↗</a></li>
+          <li><a href="https://socratic.hx-ai.org" target="_blank" rel="noopener">Bantaba AI ↗</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/ai-development-gambia">AI Products</a></li>
+          <li><a href="/software-development-gambia">Software Infrastructure</a></li>
+          <li><a href="/services#advisory">Strategy &amp; Requirements</a></li>
+          <li><a href="/services#engineering">Engineering</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:admin@hexai.gm">admin@hexai.gm</a></li>
+          <li><a href="tel:+220877834351">+220 87 783 4351</a></li>
+          <li><a href="tel:+220833020789">+220 83 302 0789</a></li>
+          <li><a href="https://www.linkedin.com/company/hexai-gm" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy" style="justify-content:space-between;flex-wrap:wrap;gap:.75rem"><span>AI &amp; Software · Built in Banjul</span><span>© 2026 HexAI · All rights reserved.</span></div>
+  </div>
+</footer>
+
+<script src="/assets/site.js"></script>
+</body>
+</html>

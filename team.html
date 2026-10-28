@@ -1,375 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-<meta charset="UTF-8"/>
-<link rel="icon" type="image/x-icon" href="/favicon.ico"/>
-<link rel="icon" type="image/png" href="/images/favicon-32.png" sizes="32x32"/>
-<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Team — HexAI Gambia</title>
-<meta name="description" content="Meet the HexAI founders: Ebrima S Jallow (CEO) and Omar Keita (CTO) — Africans building sovereign AI infrastructure for The Gambia and the continent."/>
-<meta name="keywords" content="HexAI team, Ebrima Jallow, Omar Keita, African AI founders, Gambia AI startup, sovereign AI team"/>
-<meta name="author" content="HexAI Ltd."/>
-<link rel="canonical" href="https://hexai.gm/team.html"/>
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="https://hexai.gm/team.html"/>
-<meta property="og:title" content="Team — HexAI | Africa's AI Sovereignty Mission"/>
-<meta property="og:description" content="Meet Ebrima S Jallow and Omar Keita — the founders building Africa's sovereign AI infrastructure from Banjul, The Gambia."/>
-<meta property="og:image" content="https://hexai.gm/images/og-hexai.png"/>
-<meta property="og:site_name" content="HexAI"/>
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Team — HexAI | Africa's AI Sovereignty Mission"/>
-<meta name="twitter:description" content="Meet the founders building Africa's sovereign AI infrastructure from Banjul, The Gambia."/>
-<meta name="twitter:image" content="https://hexai.gm/images/og-hexai.png"/>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"AboutPage","name":"HexAI Team","url":"https://hexai.gm/team.html","description":"The founders and team behind HexAI's sovereign AI mission for Africa.","isPartOf":{"@type":"WebSite","name":"HexAI","url":"https://hexai.gm"},"mentions":[{"@type":"Person","name":"Ebrima S Jallow","jobTitle":"Co-Founder & CEO","worksFor":{"@type":"Organization","name":"HexAI"}},{"@type":"Person","name":"Omar Keita","jobTitle":"Co-Founder & CTO","worksFor":{"@type":"Organization","name":"HexAI"}}]}
-</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300&family=IBM+Plex+Mono:wght@300;400&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-<style>
-:root{
-  --bg:#04090f;--bg2:#070d16;--navy:#1e4570;--accent:#03acf0;--accent2:#00d4ff;
-  --text:#e8f4fd;--muted:rgba(232,244,253,0.45);--dim:rgba(232,244,253,0.18);
-  --border:rgba(3,172,240,0.15);--ff-h:'Fraunces',serif;--ff-b:'Outfit',sans-serif;--ff-m:'IBM Plex Mono',monospace;
-}
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{background:var(--bg);color:var(--text);font-family:var(--ff-b);overflow-x:hidden;cursor:none;}
-#c-dot{position:fixed;width:6px;height:6px;background:var(--accent);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:transform .1s;}
-#c-ring{position:fixed;width:32px;height:32px;border:1px solid rgba(3,172,240,.5);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);}
-body:has(a:hover) #c-dot,body:has(button:hover) #c-dot{transform:translate(-50%,-50%) scale(3);background:white;}
-body:has(a:hover) #c-ring,body:has(button:hover) #c-ring{width:50px;height:50px;border-color:var(--accent);}
-#c-ring{transition:left .3s cubic-bezier(.23,1,.32,1),top .3s cubic-bezier(.23,1,.32,1),width .3s,height .3s,border-color .3s;}
-#cv{position:fixed;inset:0;z-index:0;pointer-events:none;}
-.grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
-.logo-img{height:34px;width:auto;flex-shrink:0;}
-nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:1.4rem 5rem;background:rgba(4,9,15,0);transition:background .4s,backdrop-filter .4s,border-color .4s;border-bottom:1px solid transparent;}
-nav.scrolled{background:rgba(4,9,15,.88);backdrop-filter:blur(20px);border-color:rgba(3,172,240,.08);}
-.nav-logo{display:flex;align-items:center;gap:.75rem;text-decoration:none;}
-.logo-name{font-family:var(--ff-h);font-weight:700;font-size:1.2rem;letter-spacing:.04em;}
-.logo-name span{color:var(--accent);}
-.nav-links{display:flex;gap:2.5rem;list-style:none;}
-.nav-links a{font-family:var(--ff-m);font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--text);text-decoration:none;opacity:.4;transition:opacity .2s;}
-.nav-links a:hover{opacity:1;}
-.nav-pill{display:flex;align-items:center;gap:1.8rem;}
-.live-badge{display:flex;align-items:center;gap:.5rem;font-family:var(--ff-m);font-size:.58rem;letter-spacing:.15em;color:var(--accent);opacity:.7;}
-.live-dot{width:5px;height:5px;background:var(--accent);border-radius:50%;box-shadow:0 0 8px var(--accent);animation:livepulse 1.8s ease infinite;}
-@keyframes livepulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(1.8)}}
-.nav-cta{font-family:var(--ff-m);font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);border:1px solid rgba(3,172,240,.4);padding:.5rem 1.4rem;border-radius:2px;text-decoration:none;transition:all .2s;}
-.nav-cta:hover{background:var(--accent);color:var(--bg);border-color:var(--accent);}
-.btn-glow{display:inline-flex;align-items:center;gap:.7rem;background:var(--accent);color:var(--bg);font-family:var(--ff-m);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;padding:.95rem 2.2rem;border-radius:2px;font-weight:400;transition:all .3s;border:1px solid var(--accent);}
-.btn-glow:hover{box-shadow:0 0 40px rgba(3,172,240,.45),0 0 80px rgba(3,172,240,.15);transform:translateY(-2px);}
-.btn-line{font-family:var(--ff-m);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text);text-decoration:none;opacity:.35;padding:.95rem 2.2rem;border:1px solid rgba(232,244,253,.1);border-radius:2px;transition:all .25s;}
-.btn-line:hover{opacity:1;border-color:rgba(3,172,240,.3);color:var(--accent);}
-footer{position:relative;z-index:5;background:var(--bg2);border-top:1px solid rgba(3,172,240,.1);padding:5rem 5rem 3rem;}
-.ft{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:5rem;margin-bottom:4rem;}
-.fl-logo{display:flex;align-items:center;gap:.7rem;text-decoration:none;margin-bottom:1.2rem;}
-.fl-name{font-family:var(--ff-h);font-weight:700;font-size:1.15rem;}
-.fl-name span{color:var(--accent);}
-.fl-desc{font-size:.78rem;line-height:1.8;color:var(--muted);font-weight:300;max-width:28ch;margin-bottom:1.5rem;}
-.fl-badge{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--ff-m);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:rgba(3,172,240,.07);border:1px solid rgba(3,172,240,.15);padding:.3rem .8rem;border-radius:2px;}
-.fc h4{font-family:var(--ff-m);font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);opacity:.6;margin-bottom:1.3rem;}
-.fc a{display:block;font-size:.78rem;color:var(--muted);text-decoration:none;margin-bottom:.6rem;transition:color .2s;}
-.fc a:hover{color:var(--text);}
-.fb{display:flex;justify-content:space-between;align-items:center;padding-top:2.5rem;border-top:1px solid rgba(3,172,240,.07);}
-.fb span{font-family:var(--ff-m);font-size:.58rem;letter-spacing:.1em;color:var(--muted);opacity:.4;}
-.rv{opacity:0;transform:translateY(28px);}
-.rv.in{animation:rvIn .8s cubic-bezier(.16,1,.3,1) forwards;}
-.rv.in-d1{animation-delay:.1s;}
-.rv.in-d2{animation-delay:.2s;}
-.rv.in-d3{animation-delay:.3s;}
-@keyframes rvIn{to{opacity:1;transform:translateY(0);}}
-.stag{display:inline-flex;align-items:center;gap:.7rem;font-family:var(--ff-m);font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);margin-bottom:1.8rem;}
-.stag::before{content:'';width:20px;height:1px;background:var(--accent);}
-
-/* PAGE SPECIFIC */
-.page-hero{position:relative;z-index:5;min-height:55vh;display:flex;flex-direction:column;justify-content:flex-end;padding:8rem 5rem 6rem;border-bottom:1px solid rgba(3,172,240,.07);}
-.page-hero-pre{font-family:var(--ff-m);font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:.8rem;margin-bottom:1.8rem;}
-.page-hero-pre::before{content:'';width:24px;height:1px;background:var(--accent);}
-.page-hero h1{font-family:var(--ff-h);font-weight:900;font-size:clamp(3rem,6vw,7rem);line-height:.95;letter-spacing:-.03em;margin-bottom:1.5rem;}
-.page-hero h1 em{font-style:italic;font-weight:300;color:var(--accent);}
-.page-hero p{font-size:.92rem;line-height:1.9;color:var(--muted);max-width:52ch;font-weight:300;}
-
-/* TEAM SECTION */
-.team-section{position:relative;z-index:5;padding:8rem 5rem;}
-.team-grid{display:grid;grid-template-columns:repeat(3,minmax(0,320px));gap:1.5rem;margin-top:3rem;justify-content:center;}
-
-.team-card{position:relative;background:var(--bg2);border:1px solid rgba(3,172,240,.1);overflow:hidden;transition:border-color .4s,box-shadow .4s;}
-.team-card:hover{border-color:rgba(3,172,240,.35);box-shadow:0 0 60px rgba(3,172,240,.07);}
-
-/* skewed photo frame */
-.tc-photo-wrap{position:relative;height:220px;overflow:hidden;background:#060d18;display:flex;align-items:center;justify-content:center;}
-.tc-img{width:auto;height:100%;max-width:100%;object-fit:contain;object-position:center;display:block;transition:transform .6s cubic-bezier(.16,1,.3,1);}
-.team-card:hover .tc-img{transform:scale(1.03);}
-
-/* diagonal slash — cuts from bottom-left high to bottom-right low */
-.tc-photo-wrap::after{
-  content:'';position:absolute;bottom:-1px;left:0;right:0;height:60px;
-  background:var(--bg2);
-  clip-path:polygon(0 60%,100% 0%,100% 100%,0 100%);
-  transition:background .4s;
-}
-.team-card:hover .tc-photo-wrap::after{background:#070f1a;}
-
-/* accent bar on left edge */
-.tc-photo-wrap::before{
-  content:'';position:absolute;left:0;top:0;bottom:0;width:3px;
-  background:linear-gradient(to bottom,var(--accent),rgba(3,172,240,.1));
-  z-index:2;
-}
-
-/* name plate — sits just below the photo, part of tc-body */
-.tc-nameplate{
-  padding:.8rem 1.4rem .5rem 1.6rem;
-  display:flex;align-items:flex-start;justify-content:space-between;
-  background:var(--bg2);
-  border-bottom:1px solid rgba(3,172,240,.08);
-}
-.tc-name{font-family:var(--ff-h);font-weight:700;font-size:1.05rem;line-height:1.1;letter-spacing:-.01em;}
-.tc-role{font-family:var(--ff-m);font-size:.52rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-top:.2rem;}
-
-.tc-body{padding:1rem 1.4rem 1.4rem;}
-.tc-bio{font-size:.78rem;line-height:1.7;color:var(--muted);font-weight:300;margin-bottom:.9rem;}
-.tc-tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:.9rem;}
-.tc-tag{font-family:var(--ff-m);font-size:.54rem;letter-spacing:.12em;text-transform:uppercase;background:rgba(3,172,240,.07);border:1px solid rgba(3,172,240,.15);color:rgba(3,172,240,.7);padding:.25rem .65rem;border-radius:2px;}
-.tc-link{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--ff-m);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);text-decoration:none;opacity:.5;transition:opacity .3s;}
-.team-card:hover .tc-link{opacity:1;}
-.tc-link svg{transition:transform .3s;}
-.team-card:hover .tc-link svg{transform:translateX(4px);}
-
-/* VALUES SECTION */
-.values-section{position:relative;z-index:5;padding:8rem 5rem;border-top:1px solid rgba(3,172,240,.07);background:rgba(3,172,240,.015);}
-.values-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5px;background:rgba(3,172,240,.06);margin-top:4rem;}
-.val-card{background:var(--bg2);padding:2.8rem;position:relative;overflow:hidden;transition:background .3s;}
-.val-card:hover{background:#070f1a;}
-.val-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--accent),transparent);transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.16,1,.3,1);}
-.val-card:hover::after{transform:scaleX(1);}
-.val-num{font-family:var(--ff-m);font-size:.55rem;letter-spacing:.22em;color:var(--accent);opacity:.4;margin-bottom:1.2rem;}
-.val-icon{width:42px;height:42px;border:1px solid rgba(3,172,240,.2);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:1.4rem;transition:background .3s,border-color .3s,box-shadow .3s;}
-.val-card:hover .val-icon{background:rgba(3,172,240,.1);border-color:rgba(3,172,240,.4);box-shadow:0 0 20px rgba(3,172,240,.15);}
-.val-title{font-family:var(--ff-h);font-size:1.2rem;font-weight:700;margin-bottom:.8rem;}
-.val-body{font-size:.82rem;line-height:1.8;color:var(--muted);font-weight:300;}
-
-/* CTA */
-.cta-sec{position:relative;z-index:5;padding:10rem 5rem;text-align:center;border-top:1px solid rgba(3,172,240,.07);}
-.cta-sec h2{font-family:var(--ff-h);font-weight:900;font-size:clamp(2.5rem,5vw,5.5rem);line-height:.95;letter-spacing:-.03em;margin-bottom:1.5rem;}
-.cta-sec h2 em{font-style:italic;font-weight:300;color:var(--accent);}
-.cta-sec p{font-size:.9rem;line-height:1.9;color:var(--muted);max-width:44ch;margin:0 auto 3rem;font-weight:300;}
-.cta-btns{display:flex;align-items:center;justify-content:center;gap:1.5rem;}
-
-@media(max-width:768px){
-  nav{padding:1rem 1.5rem;}.nav-links{display:none;}
-  .page-hero,.team-section,.values-section,.cta-sec{padding-left:1.5rem;padding-right:1.5rem;}
-  .team-grid{grid-template-columns:1fr;gap:1.5rem;}
-  .values-grid{grid-template-columns:1fr;}
-  .ft{grid-template-columns:1fr;gap:3rem;}footer{padding:3rem 1.5rem 2rem;}
-}
-</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team | HexAI, Banjul</title>
+<meta name="description" content="Meet the HexAI team in Banjul: the engineers and operators building AI and software for The Gambia.">
+<link rel="canonical" href="https://hexai.gm/team">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HexAI">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://hexai.gm/team">
+<meta property="og:title" content="Team | HexAI, Banjul">
+<meta property="og:description" content="Meet the HexAI team in Banjul: the engineers and operators building AI and software for The Gambia.">
+<meta property="og:image" content="https://hexai.gm/images/og-hexai.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Team | HexAI, Banjul">
+<meta name="twitter:description" content="Meet the HexAI team in Banjul: the engineers and operators building AI and software for The Gambia.">
+<meta name="twitter:image" content="https://hexai.gm/images/og-hexai.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://hexai.gm/#org", "name": "HexAI", "url": "https://hexai.gm/", "logo": "https://hexai.gm/images/logo-hexai.png", "description": "HexAI builds AI products and software infrastructure for African governments, enterprises and students, from payment rails to offline AI tutors.", "email": "admin@hexai.gm", "telephone": "+220 87 783 4351", "sameAs": ["https://www.linkedin.com/company/hexai-gm"], "address": {"@type": "PostalAddress", "addressLocality": "Banjul", "addressCountry": "GM"}, "areaServed": {"@type": "Country", "name": "The Gambia"}, "knowsAbout": ["Artificial intelligence", "Machine learning", "Software development", "Payment infrastructure", "Business automation"]}</script>
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script>(function(){var t=null;try{t=localStorage.getItem('hexai-theme')}catch(e){}document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark')})()</script>
+<link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-<div id="c-dot"></div><div id="c-ring"></div>
-<canvas id="cv"></canvas>
-<div class="grain"></div>
 
-<nav id="nav">
-  <a class="nav-logo" href="/">
-    <img src="images/logo-hexai.png" alt="HexAI" class="logo-img">
-    <span class="logo-name">Hex<span>AI</span></span>
-  </a>
-  <ul class="nav-links">
-    <li><a href="/services">Services</a></li>
-    <li><a href="/projects">Projects</a></li>
-    <li><a href="/#sovereignty">Sovereignty</a></li>
-    <li><a href="/#gambia">The Gambia</a></li>
-  </ul>
-  <div class="nav-pill">
-    <div class="live-badge"><div class="live-dot"></div>Building in Public</div>
-    <a class="nav-cta" href="/contact">Partner With Us</a>
+<canvas id="mesh" aria-hidden="true"></canvas>
+<div class="glow" aria-hidden="true"></div>
+
+<div class="nav-shell">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="nav-logo" href="/" aria-label="HexAI home">
+      <img src="/images/logo-hexai.png" alt="HexAI" width="34" height="34">
+      <span class="status" role="status" aria-label="All systems operational"></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="/services">Services</a></li>
+      <li><a href="/projects">Projects</a></li>
+      <li><a href="/team" aria-current="page">Team</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="chip hide-sm" href="https://app.hx-ai.org" target="_blank" rel="noopener">Console</a>
+      <a class="chip" href="/contact"><span class="dot"></span>Partner<span class="dot"></span></a>
+      <button class="chip icon" id="themeBtn" aria-label="Toggle colour theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="chip icon menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobilePanel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-panel" id="mobilePanel">
+    <a href="/">Home</a>
+    <a href="/services">Services</a>
+    <a href="/projects">Projects</a>
+    <a href="/team" aria-current="page">Team</a>
+    <a href="/contact">Contact</a>
   </div>
-</nav>
+</div>
 
-<section class="page-hero">
-  <div class="page-hero-pre">Our Team</div>
-  <h1>The People Behind<br><em>The Mission.</em></h1>
-  <p>HexAI is built by Africans who understand the continent — its challenges, its potential, and the urgency of the moment. We combine deep technical expertise with lived experience to architect intelligence infrastructure that actually works here.</p>
-</section>
-
-<section class="team-section">
-  <div class="stag rv">Founders</div>
-  <div class="team-grid">
-
-    <div class="team-card rv">
-      <div class="tc-photo-wrap">
-        <img class="tc-img" src="images/ebrima.png" alt="Ebrima S Jallow">
-      </div>
-      <div class="tc-nameplate">
-        <div>
-          <div class="tc-name">Ebrima S Jallow</div>
-          <div class="tc-role">Co-Founder & CEO</div>
-        </div>
-      </div>
-      <div class="tc-body">
-        <p class="tc-bio">Ebrima leads HexAI's strategic vision and government partnerships. With deep roots in Gambian civil society and a background spanning policy, technology, and enterprise, he drives HexAI's mission to establish sovereign AI infrastructure across West Africa.</p>
-        <div class="tc-tags">
-          <span class="tc-tag">AI Policy</span>
-          <span class="tc-tag">B2G Strategy</span>
-          <span class="tc-tag">West Africa</span>
-          <span class="tc-tag">Sovereign Infrastructure</span>
-        </div>
-        <a href="#" class="tc-link">LinkedIn <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 13 13"><line x1="2" y1="6.5" x2="11" y2="6.5"/><polyline points="7.5,3 11,6.5 7.5,10"/></svg></a>
-      </div>
+<main>
+<section class="hero page">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">Our team · Banjul, The Gambia</span>
+      <h1>The people behind<br>the <em>mission.</em></h1>
+      <p class="lead">HexAI is built by Africans who understand the continent: its challenges, its potential and the urgency of the moment. We combine deep technical expertise with lived experience to build intelligence infrastructure that actually works here.</p>
     </div>
-
-    <div class="team-card rv in-d1">
-      <div class="tc-photo-wrap">
-        <img class="tc-img" src="images/omar.png" alt="Omar Keita">
-      </div>
-      <div class="tc-nameplate">
-        <div>
-          <div class="tc-name">Omar Keita</div>
-          <div class="tc-role">Co-Founder & CTO</div>
-        </div>
-      </div>
-      <div class="tc-body">
-        <p class="tc-bio">Omar architects HexAI's technical infrastructure and AI systems. A seasoned software engineer and ML practitioner, he specialises in building production-grade sovereign AI stacks — from data digitization pipelines and domain-specific models to real-time inference systems and enterprise automation.</p>
-        <div class="tc-tags">
-          <span class="tc-tag">ML Engineering</span>
-          <span class="tc-tag">Sovereign AI Stack</span>
-          <span class="tc-tag">Full-Stack Dev</span>
-          <span class="tc-tag">Data Infrastructure</span>
-        </div>
-        <a href="#" class="tc-link">LinkedIn <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 13 13"><line x1="2" y1="6.5" x2="11" y2="6.5"/><polyline points="7.5,3 11,6.5 7.5,10"/></svg></a>
-      </div>
-    </div>
-
-    <div class="team-card rv in-d2">
-      <div class="tc-photo-wrap">
-        <img class="tc-img" src="images/muhammed.png" alt="Mohammed L Touray" onerror="this.style.display='none'">
-      </div>
-      <div class="tc-nameplate">
-        <div>
-          <div class="tc-name">Mohammed L Touray</div>
-          <div class="tc-role">Lead Frontend Engineer</div>
-        </div>
-      </div>
-      <div class="tc-body">
-        <p class="tc-bio">Mohammed builds the interfaces that bring HexAI's systems to life. He engineers fast, accessible, and beautifully crafted frontends — turning complex AI infrastructure into experiences that just work.</p>
-        <div class="tc-tags">
-          <span class="tc-tag">Frontend</span>
-          <span class="tc-tag">UI Engineering</span>
-          <span class="tc-tag">React</span>
-          <span class="tc-tag">The Gambia</span>
-        </div>
-      </div>
-    </div>
-
+    <div class="vline" aria-hidden="true"></div>
+    <aside class="hud reveal" aria-label="Team summary">
+      <span class="c tl"></span><span class="c tr"></span><span class="c bl"></span><span class="c br"></span>
+      <div class="hud-title">HexAI · Team Roster</div>
+      <dl>
+        <dt>Founders</dt><dd>2</dd>
+        <dt>Core team</dt><dd>4</dd>
+        <dt>Base</dt><dd>Banjul, The Gambia</dd>
+        <dt>Hiring</dt><dd class="accent">Open to talent</dd>
+      </dl>
+      <a class="hud-glyph" href="/contact">
+        <span class="g" aria-hidden="true">⬡</span>
+        <span>▸ Join the mission</span>
+      </a>
+    </aside>
   </div>
 </section>
 
-<section class="values-section">
-  <div class="stag rv">What We Stand For</div>
-  <h2 class="rv in-d1" style="font-family:var(--ff-h);font-weight:900;font-size:clamp(2.2rem,4vw,4rem);line-height:1;letter-spacing:-.025em;margin-bottom:.5rem;">Principles that<br><em style="font-style:italic;font-weight:300;color:var(--accent);">drive everything.</em></h2>
-  <div class="values-grid rv in-d2">
-    <div class="val-card">
-      <div class="val-num">01</div>
-      <div class="val-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 20 20"><path d="M10 2L3 6v8l7 4 7-4V6z"/></svg></div>
-      <div class="val-title">Sovereignty First</div>
-      <p class="val-body">Every system we build starts with one question: does Africa own this? Data, models, infrastructure — all of it must be under African governance. This is non-negotiable in every engagement we take on.</p>
+<section class="section" id="founders">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Founders &amp; core team</span>
+      <h2 class="h2">Who Builds HexAI</h2>
+      <div class="rule"></div>
     </div>
-    <div class="val-card">
-      <div class="val-num">02</div>
-      <div class="val-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8"/><path d="M10 3s-5 3-5 7 5 7 5 7M10 3s5 3 5 7-5 7-5 7M2 10h16"/></svg></div>
-      <div class="val-title">Context is Everything</div>
-      <p class="val-body">We don't import solutions. We build for the real conditions on the ground — local languages, legacy systems, regulatory environments, and the specific institutional dynamics of African governance and enterprise.</p>
-    </div>
-    <div class="val-card">
-      <div class="val-num">03</div>
-      <div class="val-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 20 20"><path d="M3 10l4 4 10-10"/><circle cx="10" cy="10" r="8"/></svg></div>
-      <div class="val-title">Radical Transparency</div>
-      <p class="val-body">We build AI that can be explained and audited. Every model, every decision pathway, every data source is documented and open to scrutiny. No black boxes. No opacity. Your institution deserves to understand what it owns.</p>
-    </div>
-    <div class="val-card">
-      <div class="val-num">04</div>
-      <div class="val-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 20 20"><circle cx="10" cy="7" r="3"/><path d="M2 18c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
-      <div class="val-title">Capability Transfer</div>
-      <p class="val-body">Our goal is to make ourselves unnecessary. Every engagement includes full documentation, hands-on training, and knowledge transfer so your institution permanently owns the capability — not just the output.</p>
-    </div>
-    <div class="val-card">
-      <div class="val-num">05</div>
-      <div class="val-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 20 20"><path d="M10 2l2.5 5.5 6 .9-4.3 4.2 1 6-5.2-2.7L4.8 18.6l1-6L1.5 8.4l6-.9z"/></svg></div>
-      <div class="val-title">Proof Over Promise</div>
-      <p class="val-body">We speak in deployed systems, measured outcomes, and auditable results. Africa has had enough consultants promising transformation. We show up with working infrastructure and measurable impact from day one.</p>
-    </div>
-    <div class="val-card">
-      <div class="val-num">06</div>
-      <div class="val-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 20 20"><path d="M2 10h16M10 2v16M5 5l10 10M15 5L5 15"/></svg></div>
-      <div class="val-title">Pan-African Ambition</div>
-      <p class="val-body">We start in The Gambia and build for the continent. Every system we deploy becomes a reference architecture for the next nation. Our mission scales from Banjul to 54 sovereign AI ecosystems across Africa.</p>
+    <div class="grid c4 reveal">
+      <article class="card person">
+        <div class="photo"><span class="c tl"></span><span class="c br"></span><img src="/images/ebrima.png" alt="Ebrima S Jallow" loading="lazy"></div>
+        <h3>Ebrima S Jallow</h3>
+        <span class="role">Co-Founder &amp; COO</span>
+        <p>Ebrima runs HexAI's operations and partnerships, from government and enterprise clients to the teams delivering their projects. With deep roots in Gambian civil society and a background spanning policy, technology and enterprise, he keeps every engagement moving from signed contract to software in daily use.</p>
+        <div class="tags"><span class="tag">AI Policy</span><span class="tag">B2G Strategy</span><span class="tag">West Africa</span></div>
+      </article>
+      <article class="card person">
+        <div class="photo"><span class="c tl"></span><span class="c br"></span><img src="/images/omar.png" alt="Omar Keita" loading="lazy"></div>
+        <h3>Omar Keita</h3>
+        <span class="role">Co-Founder · CTO &amp; AI Lead</span>
+        <p>Omar leads HexAI's technology and AI engineering. He architects the systems behind our products and leads the AI work, from fine-tuning the on-device model in Bantaba AI to production APIs, data pipelines and real-time inference.</p>
+        <div class="tags"><span class="tag">AI Engineering</span><span class="tag">Fine-Tuning</span><span class="tag">Architecture</span></div>
+      </article>
+      <article class="card person">
+        <div class="photo"><span class="c tl"></span><span class="c br"></span><img src="/images/muhammed.png" alt="Mohammed L Touray" loading="lazy"></div>
+        <h3>Mohammed L Touray</h3>
+        <span class="role">Lead Frontend Engineer</span>
+        <p>Mohammed builds the interfaces that bring HexAI's systems to life. He engineers fast, accessible, carefully crafted frontends that turn complex AI infrastructure into experiences that just work.</p>
+        <div class="tags"><span class="tag">Frontend</span><span class="tag">UI Engineering</span><span class="tag">React</span></div>
+      </article>
+      <article class="card person">
+        <div class="photo"><span class="c tl"></span><span class="c br"></span><img src="/images/mamadou.png" alt="Mamadou Bah" loading="lazy"></div>
+        <h3>Mamadou Bah</h3>
+        <span class="role">Lead Backend Engineer</span>
+        <p>Mamadou leads HexAI's backend engineering: the APIs, databases and services that keep our products running in production, built to be reliable, secure and maintained for the long run.</p>
+        <div class="tags"><span class="tag">Backend</span><span class="tag">APIs</span><span class="tag">Databases</span></div>
+      </article>
     </div>
   </div>
 </section>
 
-<section class="cta-sec">
-  <div class="rv" style="font-family:var(--ff-m);font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;justify-content:center;gap:.8rem;margin-bottom:2.5rem;">
-    <span style="width:28px;height:1px;background:var(--accent);display:inline-block;opacity:.5;"></span>Join the Mission<span style="width:28px;height:1px;background:var(--accent);display:inline-block;opacity:.5;"></span>
-  </div>
-  <h2 class="rv in-d1">Let's build<br><em>Africa's future.</em></h2>
-  <p class="rv in-d2">Whether you're looking to partner, join the team, or explore what HexAI can do for your institution — we'd love to hear from you.</p>
-  <div class="cta-btns rv in-d3">
-    <a href="/contact" class="btn-glow">Get In Touch <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 14 14"><line x1="2" y1="7" x2="12" y2="7"/><polyline points="8,3 12,7 8,11"/></svg></a>
-    <a href="/services" class="btn-line">Explore Services</a>
+<section class="section alt" id="principles">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">What we stand for</span>
+      <h2 class="h2">Principles That Drive Everything</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="grid c3 reveal">
+      <article class="card">
+        <span class="num">01</span>
+        <h3>Sovereignty First</h3>
+        <p>Every system starts with one question: does Africa own this? Data, models and infrastructure must all sit under African governance. This is non-negotiable in every engagement.</p>
+      </article>
+      <article class="card">
+        <span class="num">02</span>
+        <h3>Context Is Everything</h3>
+        <p>We don't import solutions. We build for real conditions on the ground: local languages, legacy systems, regulation and the specific dynamics of African institutions.</p>
+      </article>
+      <article class="card">
+        <span class="num">03</span>
+        <h3>Radical Transparency</h3>
+        <p>We build AI that can be explained and audited. Every model, decision pathway and data source is documented and open to scrutiny. No black boxes.</p>
+      </article>
+      <article class="card">
+        <span class="num">04</span>
+        <h3>Capability Transfer</h3>
+        <p>Our goal is to make ourselves unnecessary. Every engagement includes documentation, hands-on training and knowledge transfer, so you own the capability, not just the output.</p>
+      </article>
+      <article class="card">
+        <span class="num">05</span>
+        <h3>Proof Over Promise</h3>
+        <p>We speak in deployed systems, measured outcomes and auditable results. We show up with working infrastructure and measurable impact from day one.</p>
+      </article>
+      <article class="card">
+        <span class="num">06</span>
+        <h3>Pan-African Ambition</h3>
+        <p>We start in The Gambia and build for the continent. Every system we deploy becomes a reference architecture for the next nation, from Banjul to 54 sovereign AI ecosystems.</p>
+      </article>
+    </div>
+
+    <div class="closing reveal">
+      <div>
+        <span class="eyebrow">Join the mission</span>
+        <h2>Let's build Africa's future</h2>
+        <p class="note">Whether you want to partner, join the team, or see what HexAI can do for your institution, we'd love to hear from you.</p>
+      </div>
+      <div class="hero-cta" style="margin-top:0">
+        <a class="btn primary" href="/contact">Get in touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn" href="/services">Explore services</a>
+      </div>
+    </div>
   </div>
 </section>
+</main>
 
 <footer>
-  <div class="ft">
-    <div>
-      <a class="fl-logo" href="/">
-        <img src="images/logo-hexai.png" alt="HexAI" class="logo-img">
-        <span class="fl-name">Hex<span>AI</span></span>
-      </a>
-      <p class="fl-desc">AI infrastructure and advisory firm dedicated to establishing AI sovereignty for The Gambia and the African continent.</p>
-      <div class="fl-badge">Banjul, The Gambia · Building in Public</div>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <img src="/images/logo-hexai.png" alt="HexAI" width="40" height="40">
+        <p class="lead" style="margin-top:1.25rem;font-size:1rem">We build quality AI and software.</p>
+        <p class="loc">· Banjul · The Gambia</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/team">Team</a></li>
+          <li><a href="/projects">Case studies</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="hl">Products</h4>
+        <ul>
+          <li><a href="https://karang.hx-ai.org" target="_blank" rel="noopener">Karang ↗</a></li>
+          <li><a href="/payment-gateway">HPG</a></li>
+          <li><a href="https://kernel.hexai.gm" target="_blank" rel="noopener">Kernel ↗</a></li>
+          <li><a href="https://socratic.hx-ai.org" target="_blank" rel="noopener">Bantaba AI ↗</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/ai-development-gambia">AI Products</a></li>
+          <li><a href="/software-development-gambia">Software Infrastructure</a></li>
+          <li><a href="/services#advisory">Strategy &amp; Requirements</a></li>
+          <li><a href="/services#engineering">Engineering</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:admin@hexai.gm">admin@hexai.gm</a></li>
+          <li><a href="tel:+220877834351">+220 87 783 4351</a></li>
+          <li><a href="tel:+220833020789">+220 83 302 0789</a></li>
+          <li><a href="https://www.linkedin.com/company/hexai-gm" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="fc"><h4>Services</h4><a href="/services">Strategic Advisory</a><a href="/services">Data Infrastructure</a><a href="/services">Intelligent Automation</a><a href="/services">ML Engineering</a></div>
-    <div class="fc"><h4>Company</h4><a href="/">Home</a><a href="/team">Team</a><a href="/projects">Case Studies</a><a href="/contact">Contact</a></div>
-    <div class="fc"><h4>Connect</h4><a href="mailto:admin@hexai.gm">admin@hexai.gm</a><a href="tel:+2207834351">+220 783 4351</a><a href="#">LinkedIn</a><a href="/contact">Partnerships</a></div>
-  </div>
-  <div class="fb">
-    <span>© 2026 HexAI Ltd. · Banjul, The Gambia</span>
-    <span>AI Sovereignty · African Intelligence · Sovereign by Design</span>
-    <span>Privacy · Terms</span>
+    <div class="copy" style="justify-content:space-between;flex-wrap:wrap;gap:.75rem"><span>AI &amp; Software · Built in Banjul</span><span>© 2026 HexAI · All rights reserved.</span></div>
   </div>
 </footer>
 
-<script>
-// CURSOR
-const cdot=document.getElementById('c-dot'),cring=document.getElementById('c-ring');
-let mx=window.innerWidth/2,my=window.innerHeight/2,rx=mx,ry=my;
-document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cdot.style.left=mx+'px';cdot.style.top=my+'px';});
-(function ar(){rx+=(mx-rx)*.11;ry+=(my-ry)*.11;cring.style.left=rx+'px';cring.style.top=ry+'px';requestAnimationFrame(ar);})();
-
-// NAV SCROLL
-window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60);});
-
-// CANVAS
-const cv=document.getElementById('cv'),cx=cv.getContext('2d');
-let W,H;
-function rsz(){W=cv.width=window.innerWidth;H=cv.height=window.innerHeight;}
-rsz();window.addEventListener('resize',rsz);
-class Node{
-  constructor(){this.x=Math.random()*W;this.y=Math.random()*H;this.vx=(Math.random()-.5)*.25;this.vy=(Math.random()-.5)*.25;this.size=Math.random()*1.6+.4;this.phase=Math.random()*Math.PI*2;}
-  tick(){const dx=mx-this.x,dy=my-this.y,d=Math.hypot(dx,dy);if(d<250&&d>0){const f=(1-d/250)*.04;this.vx+=dx/d*f;this.vy+=dy/d*f;}this.vx*=.985;this.vy*=.985;this.x+=this.vx;this.y+=this.vy;if(this.x<0)this.x=W;if(this.x>W)this.x=0;if(this.y<0)this.y=H;if(this.y>H)this.y=0;this.phase+=.008;}
-  draw(){const a=.25+.2*Math.sin(this.phase);cx.beginPath();cx.arc(this.x,this.y,this.size,0,Math.PI*2);cx.fillStyle=`rgba(3,172,240,${a})`;cx.fill();}
-}
-const nodes=[];for(let i=0;i<90;i++)nodes.push(new Node());
-function drawHexGrid(){const s=55,w=s*2,h=Math.sqrt(3)*s,t=Date.now()/6000;for(let row=-1;row<H/h+2;row++){for(let col=-1;col<W/w+2;col++){const xo=(row%2)*s,hx=col*w+xo,hy=row*h,d=Math.hypot(hx-mx,hy-my),proximity=Math.max(0,1-d/400),a=.018+proximity*.04+.01*Math.sin(t+row*.3+col*.2);cx.beginPath();for(let i=0;i<6;i++){const ang=Math.PI/3*i+Math.PI/6;cx.lineTo(hx+s*.9*Math.cos(ang),hy+s*.9*Math.sin(ang));}cx.closePath();cx.strokeStyle=`rgba(3,172,240,${a})`;cx.lineWidth=.5;cx.stroke();}}}
-function frame(){cx.clearRect(0,0,W,H);const vg=cx.createRadialGradient(W/2,H/2,H*.2,W/2,H/2,H*.9);vg.addColorStop(0,'transparent');vg.addColorStop(1,'rgba(4,9,15,.45)');drawHexGrid();for(let i=0;i<nodes.length;i++){for(let j=i+1;j<nodes.length;j++){const dx=nodes[i].x-nodes[j].x,dy=nodes[i].y-nodes[j].y,d=Math.hypot(dx,dy);if(d<120){const prox=Math.max(0,1-Math.min(Math.hypot((nodes[i].x+nodes[j].x)/2-mx,(nodes[i].y+nodes[j].y)/2-my)/300,1));cx.beginPath();cx.moveTo(nodes[i].x,nodes[i].y);cx.lineTo(nodes[j].x,nodes[j].y);cx.strokeStyle=`rgba(3,172,240,${(1-d/120)*.14+prox*.12})`;cx.lineWidth=.4+prox*.4;cx.stroke();}}nodes[i].tick();nodes[i].draw();}const mg=cx.createRadialGradient(mx,my,0,mx,my,220);mg.addColorStop(0,'rgba(3,172,240,0.05)');mg.addColorStop(1,'transparent');cx.fillStyle=mg;cx.fillRect(0,0,W,H);cx.fillStyle=vg;cx.fillRect(0,0,W,H);requestAnimationFrame(frame);}
-frame();
-
-// SCROLL REVEAL
-const sio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');sio.unobserve(e.target);}}),{threshold:.1});
-document.querySelectorAll('.rv').forEach(el=>sio.observe(el));
-</script>
+<script src="/assets/site.js"></script>
 </body>
 </html>
