@@ -1,256 +1,233 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact HexAI — Book a strategy call or get in touch to discuss your AI engineering needs.">
-  <title>Contact — HexAI</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⬡</text></svg>">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact HexAI | AI &amp; Software Company in Banjul, The Gambia</title>
+<meta name="description" content="Talk to HexAI about an AI or software project. Free 30-minute strategy call. Based in Banjul, The Gambia: admin@hexai.gm, +220 87 783 4351.">
+<link rel="canonical" href="https://hexai.gm/contact">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HexAI">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://hexai.gm/contact">
+<meta property="og:title" content="Contact HexAI | AI &amp; Software Company in Banjul, The Gambia">
+<meta property="og:description" content="Talk to HexAI about an AI or software project. Free 30-minute strategy call. Based in Banjul, The Gambia: admin@hexai.gm, +220 87 783 4351.">
+<meta property="og:image" content="https://hexai.gm/images/og-hexai.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact HexAI | AI &amp; Software Company in Banjul, The Gambia">
+<meta name="twitter:description" content="Talk to HexAI about an AI or software project. Free 30-minute strategy call. Based in Banjul, The Gambia: admin@hexai.gm, +220 87 783 4351.">
+<meta name="twitter:image" content="https://hexai.gm/images/og-hexai.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://hexai.gm/#org", "name": "HexAI", "url": "https://hexai.gm/", "logo": "https://hexai.gm/images/logo-hexai.png", "description": "HexAI builds AI products and software infrastructure for African governments, enterprises and students, from payment rails to offline AI tutors.", "email": "admin@hexai.gm", "telephone": "+220 87 783 4351", "sameAs": ["https://www.linkedin.com/company/hexai-gm"], "address": {"@type": "PostalAddress", "addressLocality": "Banjul", "addressCountry": "GM"}, "areaServed": {"@type": "Country", "name": "The Gambia"}, "knowsAbout": ["Artificial intelligence", "Machine learning", "Software development", "Payment infrastructure", "Business automation"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does the strategy call cover?", "acceptedAnswer": {"@type": "Answer", "text": "A free 30-minute session where we discuss your challenge, assess whether sovereign AI deployment is feasible, and outline possible approaches. No commitment required."}}, {"@type": "Question", "name": "What's a typical engagement timeline?", "acceptedAnswer": {"@type": "Answer", "text": "Most projects run from 90 days to 24 months depending on scope. Digitization projects, sovereign model deployments and advisory engagements each follow structured delivery phases."}}, {"@type": "Question", "name": "Do you work with governments?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Government ministries and national institutions are our primary B2G focus. We specialise in sovereign infrastructure for public sector institutions across West Africa."}}, {"@type": "Question", "name": "Is our data kept within our country?", "acceptedAnswer": {"@type": "Answer", "text": "Always. Sovereign data residency is not optional in our engagements: every system we deploy runs on infrastructure within your national jurisdiction, under your governance and your law."}}]}</script>
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script>(function(){var t=null;try{t=localStorage.getItem('hexai-theme')}catch(e){}document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark')})()</script>
+<link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="nav" id="nav">
-    <div class="nav__inner">
-      <a href="index.html" class="nav__logo">
-        <img src="images/logo-hexai.png" alt="HexAI Logo" class="nav__logo-img">
-        <span class="nav__logo-text">Hex<span style="color: var(--color-accent)">AI</span></span>
-      </a>
-      <div class="nav__links" id="navLinks">
-        <a href="index.html" class="nav__link">Home</a>
-        <a href="services.html" class="nav__link">Services</a>
-        <a href="case-studies.html" class="nav__link">Case Studies</a>
-        <a href="team.html" class="nav__link">Team</a>
-        <a href="contact.html" class="nav__link nav__link--active">Contact</a>
-        <a href="contact.html" class="btn btn--primary nav__cta">Book a Call</a>
-      </div>
-      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
+<canvas id="mesh" aria-hidden="true"></canvas>
+<div class="glow" aria-hidden="true"></div>
+
+<div class="nav-shell">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="nav-logo" href="/" aria-label="HexAI home">
+      <img src="/images/logo-hexai.png" alt="HexAI" width="34" height="34">
+      <span class="status" role="status" aria-label="All systems operational"></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="/services">Services</a></li>
+      <li><a href="/projects">Projects</a></li>
+      <li><a href="/team">Team</a></li>
+      <li><a href="/contact" aria-current="page">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="chip hide-sm" href="https://app.hx-ai.org" target="_blank" rel="noopener">Console</a>
+      <a class="chip" href="/contact"><span class="dot"></span>Partner<span class="dot"></span></a>
+      <button class="chip icon" id="themeBtn" aria-label="Toggle colour theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="chip icon menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobilePanel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
     </div>
   </nav>
+  <div class="mobile-panel" id="mobilePanel">
+    <a href="/">Home</a>
+    <a href="/services">Services</a>
+    <a href="/projects">Projects</a>
+    <a href="/team">Team</a>
+    <a href="/contact" aria-current="page">Contact</a>
+  </div>
+</div>
 
-  <!-- Page Hero -->
-  <section class="page-hero">
-    <div class="page-hero__bg">
-      <canvas class="hero-canvas"></canvas>
-      <div class="page-hero__gradient"></div>
-    </div>
-    <div class="container page-hero__content">
-      <span class="page-hero__label">Contact Us</span>
-      <h1 class="page-hero__title">Let's Build<br>Something Intelligent</h1>
-      <p class="page-hero__subtitle">Tell us about your challenge. We'll map the fastest path from problem to production-grade AI solution.</p>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="section">
-    <div class="container">
-      <div class="contact-layout">
-
-        <!-- Contact Form -->
-        <div class="reveal">
-          <h2 style="font-size: var(--font-size-2xl); margin-bottom: var(--space-2);">Book a Strategy Call</h2>
-          <p style="color: var(--color-text-secondary); margin-bottom: var(--space-8);">Fill out the form and we'll schedule a free 30-minute strategy session.</p>
-          
-          <form class="form" id="contactForm" action="#" method="POST">
-            <div class="form__row">
-              <div class="form__group">
-                <label class="form__label" for="firstName">First Name *</label>
-                <input class="form__input" type="text" id="firstName" name="firstName" placeholder="John" required>
-              </div>
-              <div class="form__group">
-                <label class="form__label" for="lastName">Last Name *</label>
-                <input class="form__input" type="text" id="lastName" name="lastName" placeholder="Doe" required>
-              </div>
-            </div>
-
-            <div class="form__group">
-              <label class="form__label" for="email">Work Email *</label>
-              <input class="form__input" type="email" id="email" name="email" placeholder="john@company.com" required>
-            </div>
-
-            <div class="form__group">
-              <label class="form__label" for="company">Company</label>
-              <input class="form__input" type="text" id="company" name="company" placeholder="Your company name">
-            </div>
-
-            <div class="form__group">
-              <label class="form__label" for="service">What are you interested in?</label>
-              <select class="form__select" id="service" name="service">
-                <option value="">Select a service focus</option>
-                <option value="strategic-advisory">Strategic Advisory & Governance</option>
-                <option value="digitization">Data Infrastructure & Digitization</option>
-                <option value="model-development">Sovereign Model Development</option>
-                <option value="robotics">Robotics & Automation</option>
-                <option value="other">Other Inquiry</option>
-              </select>
-            </div>
-
-            <div class="form__group">
-              <label class="form__label" for="message">Tell us about your project *</label>
-              <textarea class="form__textarea" id="message" name="message" placeholder="Describe your challenge, goals, and any relevant context..." required></textarea>
-            </div>
-
-            <div class="form__group">
-              <label class="form__label" for="budget">Estimated Budget Range</label>
-              <select class="form__select" id="budget" name="budget">
-                <option value="">Select a range</option>
-                <option value="50k-100k">$50K – $100K</option>
-                <option value="100k-250k">$100K – $250K</option>
-                <option value="250k-500k">$250K – $500K</option>
-                <option value="500k+">$500K+</option>
-                <option value="unsure">Not sure yet</option>
-              </select>
-            </div>
-
-            <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">
-              Submit Request
-              <svg class="btn__icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9,4 13,8 9,12"/></svg>
-            </button>
-          </form>
-        </div>
-
-        <!-- Contact Info -->
-        <div class="contact-info reveal">
-          <h3 style="font-size: var(--font-size-xl); margin-bottom: var(--space-8);">Other Ways to Reach Us</h3>
-
-          <div class="contact-info__item">
-            <div class="contact-info__icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
-              </svg>
-            </div>
-            <div>
-              <p class="contact-info__label">Email</p>
-              <p class="contact-info__value">hello@hexai.com</p>
-            </div>
-          </div>
-
-          <div class="contact-info__item">
-            <div class="contact-info__icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
-              </svg>
-            </div>
-            <div>
-              <p class="contact-info__label">Phone</p>
-              <p class="contact-info__value">+1 (555) 0123-456</p>
-            </div>
-          </div>
-
-          <div class="contact-info__item">
-            <div class="contact-info__icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                <circle cx="12" cy="10" r="3"/>
-              </svg>
-            </div>
-            <div>
-              <p class="contact-info__label">Office</p>
-              <p class="contact-info__value">San Francisco, CA<br>New York, NY</p>
-            </div>
-          </div>
-
-          <div class="contact-info__item">
-            <div class="contact-info__icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="12 6 12 12 16 14"/>
-              </svg>
-            </div>
-            <div>
-              <p class="contact-info__label">Response Time</p>
-              <p class="contact-info__value">Within 24 hours</p>
-            </div>
-          </div>
-
-          <!-- FAQ Mini -->
-          <div style="margin-top: var(--space-12); padding-top: var(--space-12); border-top: 1px solid var(--color-border);">
-            <h3 style="font-size: var(--font-size-lg); margin-bottom: var(--space-6);">Common Questions</h3>
-            
-            <div style="margin-bottom: var(--space-6);">
-              <h4 style="font-size: var(--font-size-sm); font-weight: var(--font-weight-semibold); margin-bottom: var(--space-2);">What's the typical engagement timeline?</h4>
-              <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">Most projects range from 8 to 24 weeks depending on complexity. We provide a detailed timeline during the discovery phase.</p>
-            </div>
-
-            <div style="margin-bottom: var(--space-6);">
-              <h4 style="font-size: var(--font-size-sm); font-weight: var(--font-weight-semibold); margin-bottom: var(--space-2);">Do you work with startups?</h4>
-              <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">Yes. We work with organizations of all sizes — from Series A startups to Fortune 500 enterprises.</p>
-            </div>
-
-            <div>
-              <h4 style="font-size: var(--font-size-sm); font-weight: var(--font-weight-semibold); margin-bottom: var(--space-2);">What does the strategy call cover?</h4>
-              <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">A free 30-minute session where we discuss your challenge, assess feasibility, and outline potential approaches.</p>
-            </div>
-          </div>
-        </div>
-
+<main>
+<section class="hero page">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">Get in touch · Partner with us</span>
+      <h1>Let's build something<br><em>sovereign.</em></h1>
+      <p class="lead">Whether you're a government ministry, an enterprise or a development institution, the conversation starts here. Tell us your challenge and we'll design the sovereign AI path forward.</p>
+      <div class="hero-cta">
+        <a class="btn primary" href="#book">Book a strategy call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn" href="mailto:admin@hexai.gm">admin@hexai.gm</a>
       </div>
     </div>
-  </section>
+    <div class="vline" aria-hidden="true"></div>
+    <aside class="hud reveal" aria-label="Contact status">
+      <span class="c tl"></span><span class="c tr"></span><span class="c bl"></span><span class="c br"></span>
+      <div class="hud-title">HexAI · Inbound Desk</div>
+      <dl>
+        <dt>Banjul time</dt><dd class="accent" id="clock">--:--:--</dd>
+        <dt>Hours</dt><dd>Mon–Fri · 08:00–18:00</dd>
+        <dt>Response</dt><dd>Within 24 hours</dd>
+        <dt>Strategy call</dt><dd>Free · 30 min</dd>
+      </dl>
+      <a class="hud-glyph" href="#book">
+        <span class="g" aria-hidden="true">⬡</span>
+        <span>▸ Open the form</span>
+      </a>
+    </aside>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div>
-          <a href="index.html" class="nav__logo">
-            <img src="images/logo-hexai.png" alt="HexAI Logo" class="nav__logo-img">
-            <span class="nav__logo-text">Hex<span style="color: var(--color-accent)">AI</span></span>
-          </a>
-          <p class="footer__brand-text">The "Palantir of Africa." Transforming nations through sovereign AI infrastructure and high-level consultancy.</p>
+<section class="section" id="book">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Book a strategy call</span>
+      <h2 class="h2">Tell Us Your Challenge</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="contact-grid reveal">
+      <form class="form" id="contactForm">
+        <h3>Strategy call request</h3>
+        <p>Fill out the form and we'll schedule a free 30-minute strategy session within 24 hours.</p>
+        <div class="row">
+          <div class="fld"><label for="firstName">First name *</label><input id="firstName" name="firstName" type="text" placeholder="Amara" autocomplete="given-name" required></div>
+          <div class="fld"><label for="lastName">Last name *</label><input id="lastName" name="lastName" type="text" placeholder="Diallo" autocomplete="family-name" required></div>
         </div>
-        <div>
-          <h4 class="footer__heading">Company</h4>
-          <div class="footer__links">
-            <a href="services.html" class="footer__link">Strategic Advisory</a>
-            <a href="services.html" class="footer__link">Data Infrastructure</a>
-            <a href="services.html" class="footer__link">Sovereign Models</a>
-            <a href="contact.html" class="footer__link">Contact</a>
+        <div class="row">
+          <div class="fld"><label for="email">Work email *</label><input id="email" name="email" type="email" placeholder="amara@ministry.gm" autocomplete="email" required></div>
+          <div class="fld"><label for="org">Organisation</label><input id="org" name="org" type="text" placeholder="Ministry / Enterprise / Institution" autocomplete="organization"></div>
+        </div>
+        <div class="row">
+          <div class="fld"><label for="service">Area of interest</label>
+            <select id="service" name="service">
+              <option value="">Select a focus area</option>
+              <option>Strategic Advisory &amp; National AI Policy</option>
+              <option>Data Infrastructure &amp; Digitization</option>
+              <option>Intelligent Automation</option>
+              <option>Software Dev &amp; ML Engineering</option>
+              <option>Partnership / Investment</option>
+              <option>Other Inquiry</option>
+            </select>
+          </div>
+          <div class="fld"><label for="budget">Estimated budget</label>
+            <select id="budget" name="budget">
+              <option value="">Select a range</option>
+              <option>$50K – $100K</option>
+              <option>$100K – $250K</option>
+              <option>$250K – $500K</option>
+              <option>$500K+</option>
+              <option>Not sure yet</option>
+            </select>
           </div>
         </div>
-        <div>
-          <h4 class="footer__heading">Service Lines</h4>
-          <div class="footer__links">
-            <a href="services.html" class="footer__link">National AI Roadmaps</a>
-            <a href="services.html" class="footer__link">Digitization Projects</a>
-            <a href="services.html" class="footer__link">Custom LLM Training</a>
-            <a href="services.html" class="footer__link">Robotics Integration</a>
-          </div>
-        </div>
-        <div>
-          <h4 class="footer__heading">Connect</h4>
-          <div class="footer__links">
-            <a href="mailto:hello@hexai.com" class="footer__link">hello@hexai.com</a>
-            <a href="#" class="footer__link">LinkedIn</a>
-            <a href="#" class="footer__link">GitHub</a>
-            <a href="#" class="footer__link">Twitter / X</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <p class="footer__copyright">&copy; 2026 HexAI. All rights reserved.</p>
-        <div class="footer__socials">
-          <a href="#" class="footer__social" aria-label="LinkedIn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </a>
-          <a href="#" class="footer__social" aria-label="GitHub">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-          </a>
-          <a href="#" class="footer__social" aria-label="Twitter">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </a>
-        </div>
+        <div class="fld"><label for="message">Tell us about your challenge *</label><textarea id="message" name="message" placeholder="Describe your challenge, institution size, and what success looks like for you…" required></textarea></div>
+        <button class="btn primary" type="submit">Submit request <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+      </form>
+      <div class="reach">
+        <div class="item"><span class="eyebrow">Email</span><a href="mailto:admin@hexai.gm">admin@hexai.gm</a></div>
+        <div class="item"><span class="eyebrow">Phone</span><a href="tel:+220877834351">+220 87 783 4351</a><a href="tel:+220833020789">+220 83 302 0789</a></div>
+        <div class="item"><span class="eyebrow">LinkedIn</span><a href="https://www.linkedin.com/company/hexai-gm" target="_blank" rel="noopener">HexAI on LinkedIn ↗</a><small>Team, updates and openings</small></div>
+        <div class="item"><span class="eyebrow">Headquarters</span><p>Banjul, The Gambia</p><small>West Africa · UTC+0</small></div>
+        <div class="item"><span class="eyebrow">Response time</span><p>Within 24 hours</p><small>Mon – Fri · 08:00 – 18:00 GMT</small></div>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="js/main.js"></script>
+<section class="section alt" id="faq">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Common questions</span>
+      <h2 class="h2">Before You Reach Out</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="faq reveal">
+      <details open>
+        <summary>What does the strategy call cover?</summary>
+        <p>A free 30-minute session where we discuss your challenge, assess whether sovereign AI deployment is feasible, and outline possible approaches. No commitment required.</p>
+      </details>
+      <details>
+        <summary>What's a typical engagement timeline?</summary>
+        <p>Most projects run from 90 days to 24 months depending on scope. Digitization projects, sovereign model deployments and advisory engagements each follow structured delivery phases.</p>
+      </details>
+      <details>
+        <summary>Do you work with governments?</summary>
+        <p>Yes. Government ministries and national institutions are our primary B2G focus. We specialise in sovereign infrastructure for public sector institutions across West Africa.</p>
+      </details>
+      <details>
+        <summary>Is our data kept within our country?</summary>
+        <p>Always. Sovereign data residency is not optional in our engagements: every system we deploy runs on infrastructure within your national jurisdiction, under your governance and your law.</p>
+      </details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <img src="/images/logo-hexai.png" alt="HexAI" width="40" height="40">
+        <p class="lead" style="margin-top:1.25rem;font-size:1rem">We build quality AI and software.</p>
+        <p class="loc">· Banjul · The Gambia</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/team">Team</a></li>
+          <li><a href="/projects">Case studies</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="hl">Products</h4>
+        <ul>
+          <li><a href="https://karang.hx-ai.org" target="_blank" rel="noopener">Karang ↗</a></li>
+          <li><a href="/payment-gateway">HPG</a></li>
+          <li><a href="https://kernel.hexai.gm" target="_blank" rel="noopener">Kernel ↗</a></li>
+          <li><a href="https://socratic.hx-ai.org" target="_blank" rel="noopener">Bantaba AI ↗</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/ai-development-gambia">AI Products</a></li>
+          <li><a href="/software-development-gambia">Software Infrastructure</a></li>
+          <li><a href="/services#advisory">Strategy &amp; Requirements</a></li>
+          <li><a href="/services#engineering">Engineering</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:admin@hexai.gm">admin@hexai.gm</a></li>
+          <li><a href="tel:+220877834351">+220 87 783 4351</a></li>
+          <li><a href="tel:+220833020789">+220 83 302 0789</a></li>
+          <li><a href="https://www.linkedin.com/company/hexai-gm" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy" style="justify-content:space-between;flex-wrap:wrap;gap:.75rem"><span>AI &amp; Software · Built in Banjul</span><span>© 2026 HexAI · All rights reserved.</span></div>
+  </div>
+</footer>
+
+<script src="/assets/site.js"></script>
 </body>
 </html>

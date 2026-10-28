@@ -1,0 +1,7 @@
+.vercel
+.env.local
+.env
+node_modules
+
+.claude/
+hexai (1).html

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+<link rel="icon" type="image/png" href="/images/favicon-32.png" sizes="32x32"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Projects — HexAI Gambia</title>
+<meta name="description" content="HexAI's real-world projects: Template19 WiFi SaaS, HexAI Payment Gateway, DigiTailor tailoring platform, Base10 edtech, Bantaba.ai, Kernel business OS, Kambeng crowdfunding, and FinsaFi financial analytics — sovereign AI systems built and deployed in Africa."/>
+<meta name="keywords" content="HexAI projects, sovereign AI Africa, WiFi SaaS Gambia, payment gateway Africa, edtech Africa, AI learning platform West Africa"/>
+<meta name="author" content="HexAI Ltd."/>
+<link rel="canonical" href="https://hexai.gm/projects"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://hexai.gm/projects"/>
+<meta property="og:title" content="Projects — HexAI | Real Sovereign AI Systems Built in Africa"/>
+<meta property="og:description" content="Real systems, real deployments. HexAI's portfolio of sovereign AI projects built for African institutions and markets."/>
+<meta property="og:image" content="https://hexai.gm/images/og-hexai.png"/>
+<meta property="og:site_name" content="HexAI"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Projects — HexAI | Real Sovereign AI Systems"/>
+<meta name="twitter:description" content="Real systems, real deployments. HexAI's portfolio of sovereign AI projects built for African institutions."/>
+<meta name="twitter:image" content="https://hexai.gm/images/og-hexai.png"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"HexAI Projects","url":"https://hexai.gm/projects","description":"HexAI's portfolio of sovereign AI and software projects built and deployed in Africa.","isPartOf":{"@type":"WebSite","name":"HexAI","url":"https://hexai.gm"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300&family=IBM+Plex+Mono:wght@300;400&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#04090f;--bg2:#070d16;--navy:#1e4570;--accent:#03acf0;--accent2:#00d4ff;
+  --text:#e8f4fd;--muted:rgba(232,244,253,0.45);--dim:rgba(232,244,253,0.18);
+  --border:rgba(3,172,240,0.15);--ff-h:'Fraunces',serif;--ff-b:'Outfit',sans-serif;--ff-m:'IBM Plex Mono',monospace;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:var(--ff-b);overflow-x:hidden;cursor:none;}
+#c-dot{position:fixed;width:6px;height:6px;background:var(--accent);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:transform .1s;}
+#c-ring{position:fixed;width:32px;height:32px;border:1px solid rgba(3,172,240,.5);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);}
+body:has(a:hover) #c-dot,body:has(button:hover) #c-dot{transform:translate(-50%,-50%) scale(3);background:white;}
+body:has(a:hover) #c-ring,body:has(button:hover) #c-ring{width:50px;height:50px;border-color:var(--accent);}
+#c-ring{transition:left .3s cubic-bezier(.23,1,.32,1),top .3s cubic-bezier(.23,1,.32,1),width .3s,height .3s,border-color .3s;}
+#cv{position:fixed;inset:0;z-index:0;pointer-events:none;}
+.grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+.logo-img{height:34px;width:auto;flex-shrink:0;}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:1.4rem 5rem;background:rgba(4,9,15,0);transition:background .4s,backdrop-filter .4s,border-color .4s;border-bottom:1px solid transparent;}
+nav.scrolled{background:rgba(4,9,15,.88);backdrop-filter:blur(20px);border-color:rgba(3,172,240,.08);}
+.nav-logo{display:flex;align-items:center;gap:.75rem;text-decoration:none;}
+.logo-name{font-family:var(--ff-h);font-weight:700;font-size:1.2rem;letter-spacing:.04em;}
+.logo-name span{color:var(--accent);}
+.nav-links{display:flex;gap:2.5rem;list-style:none;}
+.nav-links a{font-family:var(--ff-m);font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--text);text-decoration:none;opacity:.4;transition:opacity .2s;}
+.nav-links a:hover{opacity:1;}
+.nav-pill{display:flex;align-items:center;gap:1.8rem;}
+.live-badge{display:flex;align-items:center;gap:.5rem;font-family:var(--ff-m);font-size:.58rem;letter-spacing:.15em;color:var(--accent);opacity:.7;}
+.live-dot{width:5px;height:5px;background:var(--accent);border-radius:50%;box-shadow:0 0 8px var(--accent);animation:livepulse 1.8s ease infinite;}
+@keyframes livepulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(1.8)}}
+.nav-cta{font-family:var(--ff-m);font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);border:1px solid rgba(3,172,240,.4);padding:.5rem 1.4rem;border-radius:2px;text-decoration:none;transition:all .2s;}
+.nav-cta:hover{background:var(--accent);color:var(--bg);border-color:var(--accent);}
+.btn-glow{display:inline-flex;align-items:center;gap:.7rem;background:var(--accent);color:var(--bg);font-family:var(--ff-m);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;padding:.95rem 2.2rem;border-radius:2px;font-weight:400;transition:all .3s;border:1px solid var(--accent);}
+.btn-glow:hover{box-shadow:0 0 40px rgba(3,172,240,.45),0 0 80px rgba(3,172,240,.15);transform:translateY(-2px);}
+.btn-line{font-family:var(--ff-m);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text);text-decoration:none;opacity:.35;padding:.95rem 2.2rem;border:1px solid rgba(232,244,253,.1);border-radius:2px;transition:all .25s;}
+.btn-line:hover{opacity:1;border-color:rgba(3,172,240,.3);color:var(--accent);}
+footer{position:relative;z-index:5;background:var(--bg2);border-top:1px solid rgba(3,172,240,.1);padding:5rem 5rem 3rem;}
+.ft{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:5rem;margin-bottom:4rem;}
+.fl-logo{display:flex;align-items:center;gap:.7rem;text-decoration:none;margin-bottom:1.2rem;}
+.fl-name{font-family:var(--ff-h);font-weight:700;font-size:1.15rem;}
+.fl-name span{color:var(--accent);}
+.fl-desc{font-size:.78rem;line-height:1.8;color:var(--muted);font-weight:300;max-width:28ch;margin-bottom:1.5rem;}
+.fl-badge{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--ff-m);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:rgba(3,172,240,.07);border:1px solid rgba(3,172,240,.15);padding:.3rem .8rem;border-radius:2px;}
+.fc h4{font-family:var(--ff-m);font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);opacity:.6;margin-bottom:1.3rem;}
+.fc a{display:block;font-size:.78rem;color:var(--muted);text-decoration:none;margin-bottom:.6rem;transition:color .2s;}
+.fc a:hover{color:var(--text);}
+.fb{display:flex;justify-content:space-between;align-items:center;padding-top:2.5rem;border-top:1px solid rgba(3,172,240,.07);}
+.fb span{font-family:var(--ff-m);font-size:.58rem;letter-spacing:.1em;color:var(--muted);opacity:.4;}
+.rv{opacity:0;transform:translateY(28px);}
+.rv.in{animation:rvIn .8s cubic-bezier(.16,1,.3,1) forwards;}
+.rv.in-d1{animation-delay:.1s;}
+.rv.in-d2{animation-delay:.2s;}
+.rv.in-d3{animation-delay:.3s;}
+@keyframes rvIn{to{opacity:1;transform:translateY(0);}}
+.stag{display:inline-flex;align-items:center;gap:.7rem;font-family:var(--ff-m);font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);margin-bottom:1.8rem;}
+.stag::before{content:'';width:20px;height:1px;background:var(--accent);}
+
+/* PAGE SPECIFIC */
+.page-hero{position:relative;z-index:5;min-height:55vh;display:flex;flex-direction:column;justify-content:flex-end;padding:8rem 5rem 6rem;border-bottom:1px solid rgba(3,172,240,.07);}
+.page-hero-pre{font-family:var(--ff-m);font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:.8rem;margin-bottom:1.8rem;}
+.page-hero-pre::before{content:'';width:24px;height:1px;background:var(--accent);}
+.page-hero h1{font-family:var(--ff-h);font-weight:900;font-size:clamp(3rem,6vw,7rem);line-height:.95;letter-spacing:-.03em;margin-bottom:1.5rem;}
+.page-hero h1 em{font-style:italic;font-weight:300;color:var(--accent);}
+.page-hero p{font-size:.92rem;line-height:1.9;color:var(--muted);max-width:52ch;font-weight:300;}
+
+/* CASE STUDIES */
+.cases-section{position:relative;z-index:5;padding:8rem 5rem;}
+.case-card{border-top:1px solid rgba(3,172,240,.08);padding:5rem 0 5rem 2.5rem;position:relative;}
+.case-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--accent);transform:scaleY(0);transform-origin:top;transition:transform .6s cubic-bezier(.16,1,.3,1);}
+.case-card:hover::before{transform:scaleY(1);}
+.case-header{display:flex;align-items:baseline;gap:2rem;margin-bottom:2.5rem;}
+.case-num{font-family:var(--ff-h);font-size:5rem;font-weight:900;color:rgba(3,172,240,.07);line-height:1;letter-spacing:-.04em;flex-shrink:0;}
+.case-industry{font-family:var(--ff-m);font-size:.54rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);opacity:.55;margin-bottom:.6rem;display:flex;align-items:center;gap:.6rem;}
+.case-industry::before{content:'';width:16px;height:1px;background:var(--accent);opacity:.4;}
+.case-title{font-family:var(--ff-h);font-weight:900;font-size:clamp(1.8rem,3vw,3rem);line-height:1.05;letter-spacing:-.025em;}
+.case-body{display:grid;grid-template-columns:1fr 1.4fr;gap:5rem;align-items:start;}
+.case-desc{font-size:.9rem;line-height:1.9;color:var(--muted);font-weight:300;margin-bottom:2rem;}
+.case-features{display:flex;flex-direction:column;gap:.6rem;margin-bottom:2rem;}
+.case-feat{display:flex;align-items:baseline;gap:.8rem;font-size:.82rem;color:var(--muted);}
+.case-feat::before{content:'';width:4px;height:4px;background:var(--accent);border-radius:50%;flex-shrink:0;margin-top:.45rem;}
+.case-tags{display:flex;flex-wrap:wrap;gap:.5rem;}
+.case-tag{font-family:var(--ff-m);font-size:.54rem;letter-spacing:.12em;text-transform:uppercase;background:rgba(3,172,240,.07);border:1px solid rgba(3,172,240,.15);color:rgba(3,172,240,.7);padding:.25rem .65rem;border-radius:2px;}
+.case-link{display:inline-flex;align-items:center;gap:.55rem;margin-top:1.6rem;font-family:var(--ff-m);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);text-decoration:none;border:1px solid rgba(3,172,240,.4);padding:.6rem 1.3rem;border-radius:2px;transition:all .25s;}
+.case-link:hover{background:var(--accent);color:var(--bg);box-shadow:0 0 30px rgba(3,172,240,.35);}
+.case-metrics{display:grid;grid-template-columns:1fr;gap:1px;background:rgba(3,172,240,.06);}
+.metric{background:var(--bg2);padding:1.5rem 1.6rem;}
+.metric-n{font-family:var(--ff-h);font-size:2.2rem;font-weight:700;color:var(--accent);line-height:1;margin-bottom:.4rem;}
+.metric-l{font-family:var(--ff-m);font-size:.54rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);}
+
+/* CTA */
+.cta-sec{position:relative;z-index:5;padding:10rem 5rem;text-align:center;border-top:1px solid rgba(3,172,240,.07);}
+.cta-sec h2{font-family:var(--ff-h);font-weight:900;font-size:clamp(2.5rem,5vw,5.5rem);line-height:.95;letter-spacing:-.03em;margin-bottom:1.5rem;}
+.cta-sec h2 em{font-style:italic;font-weight:300;color:var(--accent);}
+.cta-sec p{font-size:.9rem;line-height:1.9;color:var(--muted);max-width:44ch;margin:0 auto 3rem;font-weight:300;}
+.cta-btns{display:flex;align-items:center;justify-content:center;gap:1.5rem;}
+
+@media(max-width:768px){
+  nav{padding:1rem 1.5rem;}.nav-links{display:none;}
+  .page-hero,.cases-section,.cta-sec{padding-left:1.5rem;padding-right:1.5rem;}
+  .case-header{flex-direction:column;gap:.5rem;}
+  .case-num{font-size:3rem;}
+  .case-body{grid-template-columns:1fr;gap:2.5rem;}
+  .case-metrics{grid-template-columns:1fr 1fr;}
+  .ft{grid-template-columns:1fr;gap:3rem;}footer{padding:3rem 1.5rem 2rem;}
+}
+</style>
+</head>
+<body>
+<div id="c-dot"></div><div id="c-ring"></div>
+<canvas id="cv"></canvas>
+<div class="grain"></div>
+
+<nav id="nav">
+  <a class="nav-logo" href="/legacy-2026/">
+    <img src="/images/logo-hexai.png" alt="HexAI" class="logo-img">
+    <span class="logo-name">Hex<span>AI</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/legacy-2026/services">Services</a></li>
+    <li><a href="/legacy-2026/projects">Projects</a></li>
+    <li><a href="/legacy-2026/#sovereignty">Sovereignty</a></li>
+    <li><a href="/legacy-2026/#gambia">The Gambia</a></li>
+  </ul>
+  <div class="nav-pill">
+    <div class="live-badge"><div class="live-dot"></div>Building in Public</div>
+    <a class="nav-cta" href="/legacy-2026/contact">Partner With Us</a>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-pre">Strategic Impact</div>
+  <h1>Blueprints of<br><em>Transformation.</em></h1>
+  <p>Real systems. Measured outcomes. Every case study below represents sovereign intelligence infrastructure — built, deployed, and owned by the institutions it serves.</p>
+</section>
+
+<section class="cases-section">
+
+  <!-- 01 -->
+  <div class="case-card rv">
+    <div class="case-header">
+      <div class="case-num">01</div>
+      <div>
+        <div class="case-industry">Connectivity & ISP Tech</div>
+        <h2 class="case-title">Template19: The Future of Decentralized Connectivity</h2>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="case-left-col">
+        <p class="case-desc">Run your WiFi business without writing a line of code. Template19 lets Gambian ISPs and hotspot operators provision routers, sell vouchers, and get paid in Wave — all from one dashboard. Now live in The Gambia with 12+ ISPs already onboarded across Banjul, Serrekunda, and Brikama. Each ISP sets their own voucher packages and pricing — the platform handles collection, validation, and payout automatically.</p>
+        <div class="case-features">
+          <div class="case-feat">Zero-touch MikroTik router provisioning — one-paste script, no coding required</div>
+          <div class="case-feat">Wave Mobile Money integration — sell vouchers and get paid instantly</div>
+          <div class="case-feat">ISP-defined voucher packages — each operator sets their own tiers and durations</div>
+          <div class="case-feat">Multi-tenant dashboard for SuperAdmins, ISPs, and vendors with isolated accounts</div>
+          <div class="case-feat">Double-entry financial ledger with ISP commission splits and payout workflows</div>
+        </div>
+        <div class="case-tags">
+          <span class="case-tag">Now Live</span><span class="case-tag">WiFi SaaS</span><span class="case-tag">MikroTik</span><span class="case-tag">Wave Payments</span><span class="case-tag">The Gambia</span>
+        </div>
+        <a class="case-link" href="https://app.hx-ai.org/" target="_blank" rel="noopener">Visit Live Site <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 14 14"><path d="M5 3h6v6"/><path d="M11 3 3 11"/></svg></a>
+      </div>
+      <div class="case-metrics">
+        <div class="metric"><div class="metric-n">12+</div><div class="metric-l">ISPs Onboarded</div></div>
+        <div class="metric"><div class="metric-n">3</div><div class="metric-l">Cities: Banjul, Serrekunda, Brikama</div></div>
+        <div class="metric"><div class="metric-n">0</div><div class="metric-l">Lines of Code to Go Live</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 02 -->
+  <div class="case-card rv in-d1">
+    <div class="case-header">
+      <div class="case-num">02</div>
+      <div>
+        <div class="case-industry">Fintech & Payments</div>
+        <h2 class="case-title">HexAI Payment Gateway (HPG): Multi-Tenant Wave Integration</h2>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="case-left-col">
+        <p class="case-desc">A production-ready multi-tenant payment gateway microservice enabling any Gambian business to accept and disburse Wave Mobile Money payments through a single, managed API. HPG handles the full lifecycle — checkout initiation, webhook verification, background payout processing via Redis-backed queues, and a real-time partner dashboard. Built with Next.js, Express, and Prisma, it is the financial rails layer powering HexAI's ecosystem partners.</p>
+        <div class="case-features">
+          <div class="case-feat">Multi-tenant architecture — each partner operates in full isolation with unique API keys</div>
+          <div class="case-feat">Wave checkout + payout integration with HMAC webhook signature verification</div>
+          <div class="case-feat">Bull/Redis background payout queue with exponential retry and failure logging</div>
+          <div class="case-feat">Admin portal: revenue charts, transaction monitoring, payout management, webhook audit trail</div>
+          <div class="case-feat">Partner self-service dashboard: earnings, transaction history, API key management</div>
+        </div>
+        <div class="case-tags">
+          <span class="case-tag">Payment Gateway</span><span class="case-tag">Wave API</span><span class="case-tag">Next.js</span><span class="case-tag">Multi-Tenant</span><span class="case-tag">Fintech</span>
+        </div>
+        <a class="case-link" href="https://hpg.hexai.gm/#get-started" target="_blank" rel="noopener">Visit Live Site <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 14 14"><path d="M5 3h6v6"/><path d="M11 3 3 11"/></svg></a>
+      </div>
+      <div class="case-metrics">
+        <div class="metric"><div class="metric-n">GMD</div><div class="metric-l">Native Currency Support</div></div>
+        <div class="metric"><div class="metric-n">3×</div><div class="metric-l">Payout Retry Resilience</div></div>
+        <div class="metric"><div class="metric-n">30s</div><div class="metric-l">Query Cache Stale Time</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 03 -->
+  <div class="case-card rv in-d2">
+    <div class="case-header">
+      <div class="case-num">03</div>
+      <div>
+        <div class="case-industry">Fashion & Cultural Tech</div>
+        <h2 class="case-title">DigiTailor: African Tailoring Management Hub</h2>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="case-left-col">
+        <p class="case-desc">A digital operations platform built for African tailors and fashion designers — bridging the gap between the continent's rich tailoring heritage and modern business tooling. DigiTailor gives tailors a mobile-first hub to manage client measurements, orders, appointments, and payments in one place. Designed around the diaspora market and local Gambian tailor workflows discovered through direct user research and field interviews.</p>
+        <div class="case-features">
+          <div class="case-feat">Client measurement management and order tracking for tailors</div>
+          <div class="case-feat">Appointment scheduling with automated reminders</div>
+          <div class="case-feat">Wave Mobile Money payment collection and payout flows</div>
+          <div class="case-feat">Diaspora market module — international customers ordering African garments remotely</div>
+          <div class="case-feat">Field-validated UX designed from tailor interviews across The Gambia</div>
+        </div>
+        <div class="case-tags">
+          <span class="case-tag">Fashion Tech</span><span class="case-tag">Cultural Platform</span><span class="case-tag">Tailoring</span><span class="case-tag">Diaspora</span><span class="case-tag">The Gambia</span>
+        </div>
+      </div>
+      <div class="case-metrics">
+        <div class="metric"><div class="metric-n">Mobile</div><div class="metric-l">First Design</div></div>
+        <div class="metric"><div class="metric-n">Wave</div><div class="metric-l">Payment Integration</div></div>
+        <div class="metric"><div class="metric-n">2</div><div class="metric-l">Markets: Local + Diaspora</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 04 -->
+  <div class="case-card rv in-d3">
+    <div class="case-header">
+      <div class="case-num">04</div>
+      <div>
+        <div class="case-industry">EdTech & Rural Access</div>
+        <h2 class="case-title">Base10: Offline-First Education Platform for Rural Africa</h2>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="case-left-col">
+        <p class="case-desc">An offline-first exam prep platform built for rural African students with $40 smartphones and unreliable 3G connectivity. Base10 delivers 4,000+ WAEC past questions across 15 subjects, a smart prioritisation algorithm that surfaces weak topics, and a full offline sync engine — students download question sets on WiFi, study offline, and sync results when they reconnect. Recognised at IndabaX Sierra Leone, Base10 is the blueprint for AI-accessible education on the continent.</p>
+        <div class="case-features">
+          <div class="case-feat">Offline sync engine: pull weak-topic questions on WiFi, push attempts on reconnect</div>
+          <div class="case-feat">Smart algorithm prioritises topics below 50% accuracy to close learning gaps</div>
+          <div class="case-feat">Phone-first auth — SMS users register without email, 7-day tokens for offline use</div>
+          <div class="case-feat">Streak and gamification system to drive daily engagement in low-resource contexts</div>
+          <div class="case-feat">FastAPI + PostgreSQL backend with Docker deployment; React Native mobile app in Phase 2</div>
+        </div>
+        <div class="case-tags">
+          <span class="case-tag">EdTech</span><span class="case-tag">Offline-First</span><span class="case-tag">WAEC</span><span class="case-tag">Rural Access</span><span class="case-tag">IndabaX</span>
+        </div>
+      </div>
+      <div class="case-metrics">
+        <div class="metric"><div class="metric-n">4,000+</div><div class="metric-l">WAEC Questions</div></div>
+        <div class="metric"><div class="metric-n">15</div><div class="metric-l">Subjects Covered</div></div>
+        <div class="metric"><div class="metric-n">7-day</div><div class="metric-l">Offline JWT Tokens</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 05 -->
+  <div class="case-card rv">
+    <div class="case-header">
+      <div class="case-num">05</div>
+      <div>
+        <div class="case-industry">AI & Mastery Learning</div>
+        <h2 class="case-title">Bantaba.ai: AI-Verified Mastery LMS for West Africa</h2>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="case-left-col">
+        <p class="case-desc">Bantaba.ai is a multi-tenant, cloud-native learning management system where students cannot progress until a conversational AI verifies genuine understanding — not just correct answers. The verifier conducts Socratic dialogue across all five Bloom's Taxonomy dimensions (recall, comprehension, application, analysis, synthesis) for every chapter. Built for West African students and schools, with a sub-$0.50/user/month LLM budget target and a dual commercial and research mission: publishing to AIED, NeurIPS Ed, and EDM.</p>
+        <div class="case-features">
+          <div class="case-feat">AI Socratic-dialogue verifier gates progression across recall, comprehension, application, analysis, and synthesis</div>
+          <div class="case-feat">OpenRouter LLM gateway with full audit trail — every call logged, costed, and reproducible</div>
+          <div class="case-feat">20-model Prisma schema with multi-tenancy from day one — schools and NGOs in isolation</div>
+          <div class="case-feat">Eval harness with golden datasets for prompt + model regression testing in CI</div>
+          <div class="case-feat">Next.js 15 monorepo (pnpm + Turborepo) — frontend and backend in one deployable; Flutter mobile in Phase 2</div>
+        </div>
+        <div class="case-tags">
+          <span class="case-tag">EdTech</span><span class="case-tag">AI Tutor</span><span class="case-tag">Bloom's Taxonomy</span><span class="case-tag">LMS</span><span class="case-tag">West Africa</span>
+        </div>
+        <a class="case-link" href="https://karang.hx-ai.org/" target="_blank" rel="noopener">Visit Live Site <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 14 14"><path d="M5 3h6v6"/><path d="M11 3 3 11"/></svg></a>
+      </div>
+      <div class="case-metrics">
+        <div class="metric"><div class="metric-n">5</div><div class="metric-l">Bloom's Dimensions Verified</div></div>
+        <div class="metric"><div class="metric-n">&lt;$0.50</div><div class="metric-l">LLM Cost per User / Month</div></div>
+        <div class="metric"><div class="metric-n">≥85%</div><div class="metric-l">Expert Educator Agreement Target</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 06 -->
+  <div class="case-card rv">
+    <div class="case-header">
+      <div class="case-num">06</div>
+      <div>
+        <div class="case-industry">Business Software & Accounting</div>
+        <h2 class="case-title">Kernel: The Business Operating System for African SMEs</h2>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="case-left-col">
+        <p class="case-desc">Kernel was born from a real failure: in Q1 2026 a client asked HexAI for every invoice ever issued to them, and we couldn't produce it — the records lived on a single laptop that became corrupted. Kernel makes that impossible. It's a cloud-native business operating system covering invoices, bills, contacts, payments, bank reconciliation, and audit-grade reporting — designed so a pharmacy in Serrekunda with a part-time bookkeeper never loses its financial history. HexAI is customer zero; the product is built to be sold across West African SMEs.</p>
+        <div class="case-features">
+          <div class="case-feat">End-to-end financial system: invoices, bills, contacts, payments, and bank transactions</div>
+          <div class="case-feat">Immutable audit logs and reporting — no data trapped on a single device or in one person's head</div>
+          <div class="case-feat">Encrypted document vault for contracts, receipts, and financial records</div>
+          <div class="case-feat">Built for low-bandwidth West Africa with SSR and resilient sync</div>
+          <div class="case-feat">Next.js App Router · PostgreSQL · Prisma · JWT — deployed on DigitalOcean</div>
+        </div>
+        <div class="case-tags">
+          <span class="case-tag">Business OS</span><span class="case-tag">Accounting</span><span class="case-tag">SME Software</span><span class="case-tag">PostgreSQL</span><span class="case-tag">West Africa</span>
+        </div>
+        <a class="case-link" href="https://kernel.hexai.gm/" target="_blank" rel="noopener">Visit Live Site <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 14 14"><path d="M5 3h6v6"/><path d="M11 3 3 11"/></svg></a>
+      </div>
+      <div class="case-metrics">
+        <div class="metric"><div class="metric-n">0</div><div class="metric-l">Records Lost to a Single Device</div></div>
+        <div class="metric"><div class="metric-n">6+</div><div class="metric-l">Core Modules: Invoices → Reports</div></div>
+        <div class="metric"><div class="metric-n">SME</div><div class="metric-l">Built to Sell Across West Africa</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 07 -->
+  <div class="case-card rv in-d1">
+    <div class="case-header">
+      <div class="case-num">07</div>
+      <div>
+        <div class="case-industry">Civic Tech & Fundraising</div>
+        <h2 class="case-title">Kambeng: Community-Powered Crowdfunding for The Gambia</h2>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="case-left-col">
+        <p class="case-desc">Kambeng ("community" in Mandinka) is a transparent crowdfunding platform built to empower Gambian communities to raise funds for meaningful causes. Community leaders, organizations, and individuals create goal-based campaigns with real-time progress tracking, accept donations securely through the HexAI Payment Gateway, and account for every dalasi through expenditure proofs and KYC verification. Recurring donations are handled by an automated scheduler, and media is stored locally or in the cloud through flexible storage strategies.</p>
+        <div class="case-features">
+          <div class="case-feat">Goal-based campaigns with milestones and real-time funding progress</div>
+          <div class="case-feat">Secure donations via the HexAI Payment Gateway with automated reconciliation</div>
+          <div class="case-feat">Transparent expenditure tracking with proof submissions and KYC verification</div>
+          <div class="case-feat">Recurring-donation scheduler for sustained community giving</div>
+          <div class="case-feat">FastAPI + PostgreSQL backend with a Next.js frontend and Zustand state</div>
+        </div>
+        <div class="case-tags">
+          <span class="case-tag">Crowdfunding</span><span class="case-tag">Civic Tech</span><span class="case-tag">HPG Payments</span><span class="case-tag">FastAPI</span><span class="case-tag">The Gambia</span>
+        </div>
+        <a class="case-link" href="https://kambeng.hexai.gm/" target="_blank" rel="noopener">Visit Live Site <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 14 14"><path d="M5 3h6v6"/><path d="M11 3 3 11"/></svg></a>
+      </div>
+      <div class="case-metrics">
+        <div class="metric"><div class="metric-n">100%</div><div class="metric-l">Expenditure Transparency</div></div>
+        <div class="metric"><div class="metric-n">KYC</div><div class="metric-l">Verified Fund Withdrawals</div></div>
+        <div class="metric"><div class="metric-n">Auto</div><div class="metric-l">Recurring Donation Scheduler</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 08 -->
+  <div class="case-card rv in-d2">
+    <div class="case-header">
+      <div class="case-num">08</div>
+      <div>
+        <div class="case-industry">Fintech & SME Analytics</div>
+        <h2 class="case-title">FinsaFi: OCR-Powered Financial Analytics for Microenterprises</h2>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="case-left-col">
+        <p class="case-desc">FinsaFi turns a shoebox of paper receipts into clean, analyzable financial data. Small business owners snap or upload a receipt and PaddleOCR extracts the transaction automatically — with duplicate detection and validation to keep the books trustworthy. Google Gemini layers on plain-language financial insights and recommendations, while P&L, Balance Sheet, and Cash Flow reports export to PDF and Excel. Built mobile-first with a camera-first flow and offline-safe upload queueing for owners working on the go.</p>
+        <div class="case-features">
+          <div class="case-feat">Receipt OCR via PaddleOCR (PP-OCRv4) — JPG, PNG, and PDF extraction</div>
+          <div class="case-feat">Financial trust layer: hash-based duplicate detection and anomaly validation</div>
+          <div class="case-feat">AI insights and recommendations powered by Google Gemini</div>
+          <div class="case-feat">P&L, Balance Sheet, and Cash Flow reports with PDF/Excel export</div>
+          <div class="case-feat">Offline-safe upload queueing and organization-level RBAC data isolation</div>
+        </div>
+        <div class="case-tags">
+          <span class="case-tag">Fintech</span><span class="case-tag">OCR</span><span class="case-tag">AI Insights</span><span class="case-tag">FastAPI</span><span class="case-tag">Mobile-First</span>
+        </div>
+      </div>
+      <div class="case-metrics">
+        <div class="metric"><div class="metric-n">3</div><div class="metric-l">Report Types: P&L · BS · Cash Flow</div></div>
+        <div class="metric"><div class="metric-n">Gemini</div><div class="metric-l">AI Financial Recommendations</div></div>
+        <div class="metric"><div class="metric-n">RBAC</div><div class="metric-l">Org-Level Data Isolation</div></div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="cta-sec">
+  <div class="rv" style="font-family:var(--ff-m);font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;justify-content:center;gap:.8rem;margin-bottom:2.5rem;">
+    <span style="width:28px;height:1px;background:var(--accent);display:inline-block;opacity:.5;"></span>Your Case Study Is Next<span style="width:28px;height:1px;background:var(--accent);display:inline-block;opacity:.5;"></span>
+  </div>
+  <h2 class="rv in-d1">Let's build your<br><em>blueprint.</em></h2>
+  <p class="rv in-d2">Every transformation starts with a conversation. Tell us your challenge and we'll design the sovereign AI path forward.</p>
+  <div class="cta-btns rv in-d3">
+    <a href="/legacy-2026/contact" class="btn-glow">Book a Strategy Call <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 14 14"><line x1="2" y1="7" x2="12" y2="7"/><polyline points="8,3 12,7 8,11"/></svg></a>
+    <a href="/legacy-2026/services" class="btn-line">Explore Services</a>
+  </div>
+</section>
+
+<footer>
+  <div class="ft">
+    <div>
+      <a class="fl-logo" href="/legacy-2026/">
+        <img src="/images/logo-hexai.png" alt="HexAI" class="logo-img">
+        <span class="fl-name">Hex<span>AI</span></span>
+      </a>
+      <p class="fl-desc">AI infrastructure and advisory firm dedicated to establishing AI sovereignty for The Gambia and the African continent.</p>
+      <div class="fl-badge">Banjul, The Gambia · Building in Public</div>
+    </div>
+    <div class="fc"><h4>Services</h4><a href="/legacy-2026/services">Strategic Advisory</a><a href="/legacy-2026/services">Data Infrastructure</a><a href="/legacy-2026/services">Intelligent Automation</a><a href="/legacy-2026/services">ML Engineering</a></div>
+    <div class="fc"><h4>Company</h4><a href="/legacy-2026/">Home</a><a href="/legacy-2026/projects">Case Studies</a><a href="/legacy-2026/contact">Contact</a></div>
+    <div class="fc"><h4>Connect</h4><a href="mailto:admin@hexai.gm">admin@hexai.gm</a><a href="tel:+2207834351">+220 783 4351</a><a href="#">LinkedIn</a><a href="/legacy-2026/contact">Partnerships</a></div>
+  </div>
+  <div class="fb">
+    <span>© 2026 HexAI Ltd. · Banjul, The Gambia</span>
+    <span>AI Sovereignty · African Intelligence · Sovereign by Design</span>
+    <span>Privacy · Terms</span>
+  </div>
+</footer>
+
+<script>
+// CURSOR
+const cdot=document.getElementById('c-dot'),cring=document.getElementById('c-ring');
+let mx=window.innerWidth/2,my=window.innerHeight/2,rx=mx,ry=my;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cdot.style.left=mx+'px';cdot.style.top=my+'px';});
+(function ar(){rx+=(mx-rx)*.11;ry+=(my-ry)*.11;cring.style.left=rx+'px';cring.style.top=ry+'px';requestAnimationFrame(ar);})();
+
+// NAV SCROLL
+window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60);});
+
+// CANVAS
+const cv=document.getElementById('cv'),cx=cv.getContext('2d');
+let W,H;
+function rsz(){W=cv.width=window.innerWidth;H=cv.height=window.innerHeight;}
+rsz();window.addEventListener('resize',rsz);
+class Node{
+  constructor(){this.x=Math.random()*W;this.y=Math.random()*H;this.vx=(Math.random()-.5)*.25;this.vy=(Math.random()-.5)*.25;this.size=Math.random()*1.6+.4;this.phase=Math.random()*Math.PI*2;}
+  tick(){const dx=mx-this.x,dy=my-this.y,d=Math.hypot(dx,dy);if(d<250&&d>0){const f=(1-d/250)*.04;this.vx+=dx/d*f;this.vy+=dy/d*f;}this.vx*=.985;this.vy*=.985;this.x+=this.vx;this.y+=this.vy;if(this.x<0)this.x=W;if(this.x>W)this.x=0;if(this.y<0)this.y=H;if(this.y>H)this.y=0;this.phase+=.008;}
+  draw(){const a=.25+.2*Math.sin(this.phase);cx.beginPath();cx.arc(this.x,this.y,this.size,0,Math.PI*2);cx.fillStyle=`rgba(3,172,240,${a})`;cx.fill();}
+}
+const nodes=[];for(let i=0;i<90;i++)nodes.push(new Node());
+function drawHexGrid(){const s=55,w=s*2,h=Math.sqrt(3)*s,t=Date.now()/6000;for(let row=-1;row<H/h+2;row++){for(let col=-1;col<W/w+2;col++){const xo=(row%2)*s,hx=col*w+xo,hy=row*h,d=Math.hypot(hx-mx,hy-my),proximity=Math.max(0,1-d/400),a=.018+proximity*.04+.01*Math.sin(t+row*.3+col*.2);cx.beginPath();for(let i=0;i<6;i++){const ang=Math.PI/3*i+Math.PI/6;cx.lineTo(hx+s*.9*Math.cos(ang),hy+s*.9*Math.sin(ang));}cx.closePath();cx.strokeStyle=`rgba(3,172,240,${a})`;cx.lineWidth=.5;cx.stroke();}}}
+function frame(){cx.clearRect(0,0,W,H);const vg=cx.createRadialGradient(W/2,H/2,H*.2,W/2,H/2,H*.9);vg.addColorStop(0,'transparent');vg.addColorStop(1,'rgba(4,9,15,.45)');drawHexGrid();for(let i=0;i<nodes.length;i++){for(let j=i+1;j<nodes.length;j++){const dx=nodes[i].x-nodes[j].x,dy=nodes[i].y-nodes[j].y,d=Math.hypot(dx,dy);if(d<120){const prox=Math.max(0,1-Math.min(Math.hypot((nodes[i].x+nodes[j].x)/2-mx,(nodes[i].y+nodes[j].y)/2-my)/300,1));cx.beginPath();cx.moveTo(nodes[i].x,nodes[i].y);cx.lineTo(nodes[j].x,nodes[j].y);cx.strokeStyle=`rgba(3,172,240,${(1-d/120)*.14+prox*.12})`;cx.lineWidth=.4+prox*.4;cx.stroke();}}nodes[i].tick();nodes[i].draw();}const mg=cx.createRadialGradient(mx,my,0,mx,my,220);mg.addColorStop(0,'rgba(3,172,240,0.05)');mg.addColorStop(1,'transparent');cx.fillStyle=mg;cx.fillRect(0,0,W,H);cx.fillStyle=vg;cx.fillRect(0,0,W,H);requestAnimationFrame(frame);}
+frame();
+
+// SCROLL REVEAL
+const sio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');sio.unobserve(e.target);}}),{threshold:.1});
+document.querySelectorAll('.rv').forEach(el=>sio.observe(el));
+</script>
+</body>
+</html>

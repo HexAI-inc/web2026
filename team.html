@@ -1,216 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Meet the HexAI team — experienced AI engineers, ML researchers, and data architects building production-grade intelligent systems.">
-  <title>Our Team — HexAI</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⬡</text></svg>">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team | HexAI, Banjul</title>
+<meta name="description" content="Meet the HexAI team in Banjul: the engineers and operators building AI and software for The Gambia.">
+<link rel="canonical" href="https://hexai.gm/team">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HexAI">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://hexai.gm/team">
+<meta property="og:title" content="Team | HexAI, Banjul">
+<meta property="og:description" content="Meet the HexAI team in Banjul: the engineers and operators building AI and software for The Gambia.">
+<meta property="og:image" content="https://hexai.gm/images/og-hexai.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Team | HexAI, Banjul">
+<meta name="twitter:description" content="Meet the HexAI team in Banjul: the engineers and operators building AI and software for The Gambia.">
+<meta name="twitter:image" content="https://hexai.gm/images/og-hexai.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://hexai.gm/#org", "name": "HexAI", "url": "https://hexai.gm/", "logo": "https://hexai.gm/images/logo-hexai.png", "description": "HexAI builds AI products and software infrastructure for African governments, enterprises and students, from payment rails to offline AI tutors.", "email": "admin@hexai.gm", "telephone": "+220 87 783 4351", "sameAs": ["https://www.linkedin.com/company/hexai-gm"], "address": {"@type": "PostalAddress", "addressLocality": "Banjul", "addressCountry": "GM"}, "areaServed": {"@type": "Country", "name": "The Gambia"}, "knowsAbout": ["Artificial intelligence", "Machine learning", "Software development", "Payment infrastructure", "Business automation"]}</script>
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script>(function(){var t=null;try{t=localStorage.getItem('hexai-theme')}catch(e){}document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark')})()</script>
+<link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="nav" id="nav">
-    <div class="nav__inner">
-      <a href="index.html" class="nav__logo">
-        <img src="images/logo-hexai.png" alt="HexAI Logo" class="nav__logo-img">
-        <span class="nav__logo-text">Hex<span style="color: var(--color-accent)">AI</span></span>
-      </a>
-      <div class="nav__links" id="navLinks">
-        <a href="index.html" class="nav__link">Home</a>
-        <a href="services.html" class="nav__link">Services</a>
-        <a href="case-studies.html" class="nav__link">Case Studies</a>
-        <a href="team.html" class="nav__link nav__link--active">Team</a>
-        <a href="contact.html" class="nav__link">Contact</a>
-        <a href="contact.html" class="btn btn--primary nav__cta">Book a Call</a>
-      </div>
-      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
+<canvas id="mesh" aria-hidden="true"></canvas>
+<div class="glow" aria-hidden="true"></div>
+
+<div class="nav-shell">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="nav-logo" href="/" aria-label="HexAI home">
+      <img src="/images/logo-hexai.png" alt="HexAI" width="34" height="34">
+      <span class="status" role="status" aria-label="All systems operational"></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="/services">Services</a></li>
+      <li><a href="/projects">Projects</a></li>
+      <li><a href="/team" aria-current="page">Team</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="chip hide-sm" href="https://app.hx-ai.org" target="_blank" rel="noopener">Console</a>
+      <a class="chip" href="/contact"><span class="dot"></span>Partner<span class="dot"></span></a>
+      <button class="chip icon" id="themeBtn" aria-label="Toggle colour theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="chip icon menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobilePanel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
     </div>
   </nav>
+  <div class="mobile-panel" id="mobilePanel">
+    <a href="/">Home</a>
+    <a href="/services">Services</a>
+    <a href="/projects">Projects</a>
+    <a href="/team" aria-current="page">Team</a>
+    <a href="/contact">Contact</a>
+  </div>
+</div>
 
-  <!-- Page Hero -->
-  <section class="page-hero">
-    <div class="page-hero__bg">
-      <canvas class="hero-canvas"></canvas>
-      <div class="page-hero__gradient"></div>
+<main>
+<section class="hero page">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">Our team · Banjul, The Gambia</span>
+      <h1>The people behind<br>the <em>mission.</em></h1>
+      <p class="lead">HexAI is built by Africans who understand the continent: its challenges, its potential and the urgency of the moment. We combine deep technical expertise with lived experience to build intelligence infrastructure that actually works here.</p>
     </div>
-    <div class="container page-hero__content">
-      <span class="page-hero__label">Architects of Change</span>
-      <h1 class="page-hero__title">Deep Expertise,<br>Sovereign Vision</h1>
-      <p class="page-hero__subtitle">We are a team of AI researchers, data infrastructure experts, and strategic advisors dedicated to establishing African AI sovereignty.</p>
-    </div>
-  </section>
-
-  <!-- Leadership -->
-  <section class="section team-spotlight">
-    <div class="container">
-      <div class="team-spotlight__header reveal">
-        <span class="section__label">Leadership</span>
-        <h2 class="team-spotlight__title">Building the infrastructure<br>for a continent.</h2>
-        <p class="team-spotlight__subtitle">Seasoned operators bridging the gap between analog reality and digital intelligence.</p>
-      </div>
-      <div class="team-carousel reveal">
-        <div class="team-carousel__track">
-          <article class="team-card-flip team-card-flip--photo team-carousel__item" style="--portrait-accent: rgba(3, 172, 240, 0.35); --photo-position: 50% 18%;">
-            <div class="team-card-flip__inner">
-              <div class="team-card-flip__face team-card-flip__front">
-                <div class="team-card-flip__media">
-                  <img class="team-card-flip__photo" src="images/ebrima.png" alt="Ebrima S Jallow">
-                </div>
-                <div class="team-card-flip__meta">
-                  <h3 class="team-card-flip__name">Ebrima S Jallow</h3>
-                  <p class="team-card-flip__role">Founder & Head of AI Research</p>
-                </div>
-              </div>
-              <div class="team-card-flip__face team-card-flip__back">
-                <p class="team-card-flip__bio">Founder driving applied research and core model strategy. Computer Science graduate from the University of The Gambia.</p>
-                <div class="team-card-flip__tags">
-                  <span>Research</span><span>GenAI</span><span>Modeling</span>
-                </div>
-                <a class="team-card-flip__link" href="https://www.linkedin.com/in/ebrima-s-jallow-8b2b76232/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                </a>
-              </div>
-            </div>
-          </article>
-          <article class="team-card-flip team-card-flip--photo team-carousel__item" style="--portrait-accent: rgba(3, 172, 240, 0.35); --photo-position: 50% 15%;">
-            <div class="team-card-flip__inner">
-              <div class="team-card-flip__face team-card-flip__front">
-                <div class="team-card-flip__media">
-                  <img class="team-card-flip__photo" src="images/omar.png" alt="Omar Keita">
-                </div>
-                <div class="team-card-flip__meta">
-                  <h3 class="team-card-flip__name">Omar Keita</h3>
-                  <p class="team-card-flip__role">Co-Founder & AI Lead</p>
-                </div>
-              </div>
-              <div class="team-card-flip__face team-card-flip__back">
-                <p class="team-card-flip__bio">BSc Software Engineering specialized in AI/ML from African Leadership University, Rwanda. Architecting scalable AI infrastructure.</p>
-                <div class="team-card-flip__tags">
-                  <span>MLOps</span><span>Infrastructure</span><span>Scaling</span>
-                </div>
-                <a class="team-card-flip__link" href="https://www.linkedin.com/in/omar-keita-a055a8237/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                </a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Values Section -->
-  <section class="section">
-    <div class="container">
-      <div class="section__header reveal">
-        <span class="section__label">How We Work</span>
-        <h2 class="section__title">Our Principles</h2>
-        <p class="section__subtitle">The engineering values that guide every project we take on.</p>
-      </div>
-      <div class="values-grid reveal">
-        <div class="value-card">
-          <h3 class="value-card__title">Data Sovereignty</h3>
-          <p class="value-card__text">We believe African data should stay under African control. Our systems are designed to ensure cultural context and local governance are never compromised.</p>
-        </div>
-        <div class="value-card">
-          <h3 class="value-card__title">The Zero-to-One Bridge</h3>
-          <p class="value-card__text">We don't avoid the messy work. We embrace the digitization and cleaning phases required to turn fragmented analog records into machine-ready assets.</p>
-        </div>
-        <div class="value-card">
-          <h3 class="value-card__title">Nation-Scale Impact</h3>
-          <p class="value-card__text">We don't build apps; we build railroads. Our focus is on the foundational infrastructure that enables entire sectors and nations to thrive.</p>
-        </div>
-        <div class="value-card">
-          <h3 class="value-card__title">Proprietary Moats</h3>
-          <p class="value-card__text">By owning the digitization process, we help our clients create proprietary datasets that provide an insurmountable competitive advantage.</p>
-        </div>
-        <div class="value-card">
-          <h3 class="value-card__title">Contextual Accuracy</h3>
-          <p class="value-card__text">Global models fail in local contexts. We prioritize multilingualism (Wolof, Mandinka) and localized legal/agricultural intelligence.</p>
-        </div>
-        <div class="value-card">
-          <h3 class="value-card__title">Long-Term ROI</h3>
-          <p class="value-card__text">We are building for the next century of African growth. Our solutions are designed for longevity, maintaining sovereignty over the intelligence lifecycle.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-section section section--alt">
-    <div class="container reveal">
-      <h2 class="cta-section__title">Work With a Team<br>That Ships</h2>
-      <p class="cta-section__text">Bring your hardest AI challenge. We have the engineers to solve it and the track record to prove it.</p>
-      <a href="contact.html" class="btn btn--primary btn--lg">
-        Book a Strategy Call
-        <svg class="btn__icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9,4 13,8 9,12"/></svg>
+    <div class="vline" aria-hidden="true"></div>
+    <aside class="hud reveal" aria-label="Team summary">
+      <span class="c tl"></span><span class="c tr"></span><span class="c bl"></span><span class="c br"></span>
+      <div class="hud-title">HexAI · Team Roster</div>
+      <dl>
+        <dt>Founders</dt><dd>2</dd>
+        <dt>Core team</dt><dd>4</dd>
+        <dt>Base</dt><dd>Banjul, The Gambia</dd>
+        <dt>Hiring</dt><dd class="accent">Open to talent</dd>
+      </dl>
+      <a class="hud-glyph" href="/contact">
+        <span class="g" aria-hidden="true">⬡</span>
+        <span>▸ Join the mission</span>
       </a>
-    </div>
-  </section>
+    </aside>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div>
-          <a href="index.html" class="nav__logo">
-            <img src="images/logo-hexai.png" alt="HexAI Logo" class="nav__logo-img">
-            <span class="nav__logo-text">Hex<span style="color: var(--color-accent)">AI</span></span>
-          </a>
-          <p class="footer__brand-text">The "Palantir of Africa." Transforming nations through sovereign AI infrastructure and high-level consultancy.</p>
-        </div>
-        <div>
-          <h4 class="footer__heading">Company</h4>
-          <div class="footer__links">
-            <a href="services.html" class="footer__link">Strategic Advisory</a>
-            <a href="services.html" class="footer__link">Data Infrastructure</a>
-            <a href="services.html" class="footer__link">Sovereign Models</a>
-            <a href="contact.html" class="footer__link">Contact</a>
-          </div>
-        </div>
-        <div>
-          <h4 class="footer__heading">Service Lines</h4>
-          <div class="footer__links">
-            <a href="services.html" class="footer__link">National AI Roadmaps</a>
-            <a href="services.html" class="footer__link">Digitization Projects</a>
-            <a href="services.html" class="footer__link">Custom LLM Training</a>
-            <a href="services.html" class="footer__link">Robotics Integration</a>
-          </div>
-        </div>
-        <div>
-          <h4 class="footer__heading">Connect</h4>
-          <div class="footer__links">
-            <a href="mailto:hello@hexai.com" class="footer__link">hello@hexai.com</a>
-            <a href="#" class="footer__link">LinkedIn</a>
-            <a href="#" class="footer__link">GitHub</a>
-            <a href="#" class="footer__link">Twitter / X</a>
-          </div>
-        </div>
+<section class="section" id="founders">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Founders &amp; core team</span>
+      <h2 class="h2">Who Builds HexAI</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="grid c4 reveal">
+      <article class="card person">
+        <div class="photo"><span class="c tl"></span><span class="c br"></span><img src="/images/ebrima.png" alt="Ebrima S Jallow" loading="lazy"></div>
+        <h3>Ebrima S Jallow</h3>
+        <span class="role">Co-Founder &amp; COO</span>
+        <p>Ebrima runs HexAI's operations and partnerships, from government and enterprise clients to the teams delivering their projects. With deep roots in Gambian civil society and a background spanning policy, technology and enterprise, he keeps every engagement moving from signed contract to software in daily use.</p>
+        <div class="tags"><span class="tag">AI Policy</span><span class="tag">B2G Strategy</span><span class="tag">West Africa</span></div>
+      </article>
+      <article class="card person">
+        <div class="photo"><span class="c tl"></span><span class="c br"></span><img src="/images/omar.png" alt="Omar Keita" loading="lazy"></div>
+        <h3>Omar Keita</h3>
+        <span class="role">Co-Founder · CTO &amp; AI Lead</span>
+        <p>Omar leads HexAI's technology and AI engineering. He architects the systems behind our products and leads the AI work, from fine-tuning the on-device model in Bantaba AI to production APIs, data pipelines and real-time inference.</p>
+        <div class="tags"><span class="tag">AI Engineering</span><span class="tag">Fine-Tuning</span><span class="tag">Architecture</span></div>
+      </article>
+      <article class="card person">
+        <div class="photo"><span class="c tl"></span><span class="c br"></span><img src="/images/muhammed.png" alt="Mohammed L Touray" loading="lazy"></div>
+        <h3>Mohammed L Touray</h3>
+        <span class="role">Lead Frontend Engineer</span>
+        <p>Mohammed builds the interfaces that bring HexAI's systems to life. He engineers fast, accessible, carefully crafted frontends that turn complex AI infrastructure into experiences that just work.</p>
+        <div class="tags"><span class="tag">Frontend</span><span class="tag">UI Engineering</span><span class="tag">React</span></div>
+      </article>
+      <article class="card person">
+        <div class="photo"><span class="c tl"></span><span class="c br"></span><img src="/images/mamadou.png" alt="Mamadou Bah" loading="lazy"></div>
+        <h3>Mamadou Bah</h3>
+        <span class="role">Lead Backend Engineer</span>
+        <p>Mamadou leads HexAI's backend engineering: the APIs, databases and services that keep our products running in production, built to be reliable, secure and maintained for the long run.</p>
+        <div class="tags"><span class="tag">Backend</span><span class="tag">APIs</span><span class="tag">Databases</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="principles">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">What we stand for</span>
+      <h2 class="h2">Principles That Drive Everything</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="grid c3 reveal">
+      <article class="card">
+        <span class="num">01</span>
+        <h3>Sovereignty First</h3>
+        <p>Every system starts with one question: does Africa own this? Data, models and infrastructure must all sit under African governance. This is non-negotiable in every engagement.</p>
+      </article>
+      <article class="card">
+        <span class="num">02</span>
+        <h3>Context Is Everything</h3>
+        <p>We don't import solutions. We build for real conditions on the ground: local languages, legacy systems, regulation and the specific dynamics of African institutions.</p>
+      </article>
+      <article class="card">
+        <span class="num">03</span>
+        <h3>Radical Transparency</h3>
+        <p>We build AI that can be explained and audited. Every model, decision pathway and data source is documented and open to scrutiny. No black boxes.</p>
+      </article>
+      <article class="card">
+        <span class="num">04</span>
+        <h3>Capability Transfer</h3>
+        <p>Our goal is to make ourselves unnecessary. Every engagement includes documentation, hands-on training and knowledge transfer, so you own the capability, not just the output.</p>
+      </article>
+      <article class="card">
+        <span class="num">05</span>
+        <h3>Proof Over Promise</h3>
+        <p>We speak in deployed systems, measured outcomes and auditable results. We show up with working infrastructure and measurable impact from day one.</p>
+      </article>
+      <article class="card">
+        <span class="num">06</span>
+        <h3>Pan-African Ambition</h3>
+        <p>We start in The Gambia and build for the continent. Every system we deploy becomes a reference architecture for the next nation, from Banjul to 54 sovereign AI ecosystems.</p>
+      </article>
+    </div>
+
+    <div class="closing reveal">
+      <div>
+        <span class="eyebrow">Join the mission</span>
+        <h2>Let's build Africa's future</h2>
+        <p class="note">Whether you want to partner, join the team, or see what HexAI can do for your institution, we'd love to hear from you.</p>
       </div>
-      <div class="footer__bottom">
-        <p class="footer__copyright">&copy; 2026 HexAI. All rights reserved.</p>
-        <div class="footer__socials">
-          <a href="#" class="footer__social" aria-label="LinkedIn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </a>
-          <a href="#" class="footer__social" aria-label="GitHub">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-          </a>
-          <a href="#" class="footer__social" aria-label="Twitter">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </a>
-        </div>
+      <div class="hero-cta" style="margin-top:0">
+        <a class="btn primary" href="/contact">Get in touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn" href="/services">Explore services</a>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
+</main>
 
-  <script src="js/main.js"></script>
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <img src="/images/logo-hexai.png" alt="HexAI" width="40" height="40">
+        <p class="lead" style="margin-top:1.25rem;font-size:1rem">We build quality AI and software.</p>
+        <p class="loc">· Banjul · The Gambia</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/team">Team</a></li>
+          <li><a href="/projects">Case studies</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="hl">Products</h4>
+        <ul>
+          <li><a href="https://karang.hx-ai.org" target="_blank" rel="noopener">Karang ↗</a></li>
+          <li><a href="/payment-gateway">HPG</a></li>
+          <li><a href="https://kernel.hexai.gm" target="_blank" rel="noopener">Kernel ↗</a></li>
+          <li><a href="https://socratic.hx-ai.org" target="_blank" rel="noopener">Bantaba AI ↗</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/ai-development-gambia">AI Products</a></li>
+          <li><a href="/software-development-gambia">Software Infrastructure</a></li>
+          <li><a href="/services#advisory">Strategy &amp; Requirements</a></li>
+          <li><a href="/services#engineering">Engineering</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:admin@hexai.gm">admin@hexai.gm</a></li>
+          <li><a href="tel:+220877834351">+220 87 783 4351</a></li>
+          <li><a href="tel:+220833020789">+220 83 302 0789</a></li>
+          <li><a href="https://www.linkedin.com/company/hexai-gm" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy" style="justify-content:space-between;flex-wrap:wrap;gap:.75rem"><span>AI &amp; Software · Built in Banjul</span><span>© 2026 HexAI · All rights reserved.</span></div>
+  </div>
+</footer>
+
+<script src="/assets/site.js"></script>
 </body>
 </html>

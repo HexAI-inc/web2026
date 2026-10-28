@@ -1,0 +1,16 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/v2", "destination": "/", "permanent": true },
+    { "source": "/v2/index.html", "destination": "/", "permanent": true },
+    { "source": "/v2/:page.html", "destination": "/:page", "permanent": true },
+    { "source": "/v2/:path*", "destination": "/:path*", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/services", "destination": "/services.html" },
+    { "source": "/projects", "destination": "/projects.html" },
+    { "source": "/team", "destination": "/team.html" },
+    { "source": "/contact", "destination": "/contact.html" }
+  ]
+}
