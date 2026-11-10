@@ -365,9 +365,7 @@ footer{border-top:1px solid var(--gallery-line);background:var(--obsidian-2);pad
 .set a:hover{opacity:.75}
 .set img.wide{height:38px;width:auto}
 .set img.square{height:60px;width:auto}
-.set .wordmark{flex-shrink:0;font-family:var(--font-display);color:#0a0a0a;line-height:1;letter-spacing:-.02em;text-align:center}
-.set .wordmark b{display:block;font-size:1.6rem;font-weight:700}
-.set .wordmark span{display:block;font-size:.72rem;font-style:italic;color:#333;margin-top:.25rem;letter-spacing:0;white-space:nowrap}
+.set .logo{display:block;flex-shrink:0}
 @media (max-width:760px){
   .partner-band{margin-top:0}
   .hero.has-band{padding-bottom:2.5rem}
